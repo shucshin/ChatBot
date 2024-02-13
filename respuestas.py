@@ -61,9 +61,9 @@ def enojado():
 
 def preocupado():
 	preocupados = [
-		'',
-		'',
-		'',
-		''
+		'Las preocupaciones son parte de la vida, pero también se puede trabajar en equipo para encontrar soluciones.',
+		'Recuerda que nunca estamos solos, siempre hay una persona que esta pensando en como nos encontramos, alguen siempre vera por ti.',
+		'A veces, es útil dividir las preocupaciones en pasos más pequeños.',
+		'La autocompasión es importante. Permítete sentir estas preocupaciones, pero también recuerda que estamos aquí para encontrar formas de superarlas juntos.'
 	]
 	return preocupados[random.randint(0,len(preocupados)-1)]
