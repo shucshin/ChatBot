@@ -13,7 +13,9 @@ def run_discord_bot():
 
     @client.event
     async def on_ready():
-        print(f'{client.user} Está vivo!!')
+        print(f'{client.user} se ha conectado al servidor\n')
+        for servidor in client.guilds:
+            print(f'{servidor.name}(id: {servidor.id})')
 
     @client.event
     async def on_message(message):
