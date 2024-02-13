@@ -14,6 +14,12 @@ def get_response(message: str) -> str:
 
 	if mensaje == 'feliz':
 		return feliz()
+	
+	if mensaje == 'enojado':
+		return enojado()
+	
+	if mensaje == 'preocupado':
+		return preocupado()
 
 	return 'Lo siento, no te entendí'
 
@@ -43,3 +49,21 @@ def feliz():
 		'Yo no se cómo se siente la felicidad, simplemente soy un Bot.'
 	]
 	return felices[random.randint(0,len(felices)-1)]
+
+def enojado():
+	enojados = [
+		'',
+		'',
+		'',
+		''
+	]
+	return enojados[random.randint(0,len(enojados)-1)]
+
+def preocupado():
+	preocupados = [
+		'',
+		'',
+		'',
+		''
+	]
+	return preocupados[random.randint(0,len(preocupados)-1)]
