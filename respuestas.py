@@ -52,10 +52,10 @@ def feliz():
 
 def enojado():
 	enojados = [
-		'',
-		'',
-		'',
-		''
+		'Respira profundo y toma un momento para calmarte. Estoy aquí para escucharte y ayudarte a encontrar una solución.',
+		'A veces, expresar lo que sientes puede aliviar la tensión.',
+		'Entiendo que estás pasando por un momento difícil. Hablame más sobre el problema',
+		'Aveces podemos ser muy hirientes en los comentarios que hacemos pero se puede habalr con la otra persona para mejorar la relación humana'
 	]
 	return enojados[random.randint(0,len(enojados)-1)]
 
