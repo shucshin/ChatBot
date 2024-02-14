@@ -1,8 +1,10 @@
 import discord
-import respuestas
+from ChatBot import ChatBot
+
+chatBot = ChatBot()
 
 async def send_message(message, user_message, is_private):
-    response = respuestas.get_response(user_message)
+    response = chatBot.responder(user_message) 
     await message.author.send(response) if is_private else await message.channel.send(response)
 
 def run_discord_bot():
