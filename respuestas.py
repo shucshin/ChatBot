@@ -88,6 +88,6 @@ def ansioso():
 		'Recuerda que tus sentimientos son válidos.',
 		'Aveces el futuro puede ser aterrador.',
 		'No te deberias abrumar por cosas que esten fuera de tu control.',
-		'Aplica el metodo de 5-4-3-2-1. 5 cosas que ves, 4 cosas que puedes tocar,3 cosas que puedes escuchar, 2 cosas que puedes oler,1 cosa que puedes saborear.'
+		'Aplica el metodo de 5-4-3-2-1. 5 cosas que ves, 4 cosas que puedes tocar, 3 cosas que puedes escuchar, 2 cosas que puedes oler, 1 cosa que puedes saborear.'
 	]
 	return ansiosos[random.randint(0,len(ansiosos)-1)]
