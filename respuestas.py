@@ -14,6 +14,24 @@ def get_response(message: str) -> str:
 
 	if mensaje == 'feliz':
 		return feliz()
+	
+	if mensaje == 'enojado':
+		return enojado()
+	
+	if mensaje == 'preocupado':
+		return preocupado()
+
+	if mensaje == 'asustado':
+		return asustado()
+	
+	if mensaje == 'ansioso':
+		return ansioso()
+	
+	if mensaje == 'cansado':
+		return cansado()
+	
+	if mensaje == 'orgulloso':
+		return orgulloso()
 
 	return 'Lo siento, no te entendí'
 
@@ -43,3 +61,57 @@ def feliz():
 		'Yo no se cómo se siente la felicidad, simplemente soy un Bot.'
 	]
 	return felices[random.randint(0,len(felices)-1)]
+
+def enojado():
+	enojados = [
+		'Respira profundo y toma un momento para calmarte. Estoy aquí para escucharte y ayudarte a encontrar una solución.',
+		'A veces, expresar lo que sientes puede aliviar la tensión.',
+		'Entiendo que estás pasando por un momento difícil. Hablame más sobre el problema',
+		'Aveces podemos ser muy hirientes en los comentarios que hacemos pero se puede hablar con la otra persona para mejorar la relación humana'
+	]
+	return enojados[random.randint(0,len(enojados)-1)]
+
+def preocupado():
+	preocupados = [
+		'Las preocupaciones son parte de la vida, pero también se puede trabajar en equipo para encontrar soluciones.',
+		'Recuerda que nunca estamos solos, siempre hay una persona que esta pensando en como nos encontramos, alguen siempre vera por ti.',
+		'A veces, es útil dividir las preocupaciones en pasos más pequeños.',
+		'La autocompasión es importante. Permítete sentir estas preocupaciones, pero también recuerda que estamos aquí para encontrar formas de superarlas juntos.'
+	]
+	return preocupados[random.randint(0,len(preocupados)-1)]
+
+def asustado():
+	asustados = [
+		'Respira profundo y recuerda que el miedo es una emoción natural.',
+		'Puede ser una señal de que estás fuera de tu zona de confort.',
+		'Incluso en los momentos más oscuros, siempre hay una luz al final del túnel.',
+		'El miedo puede paralizarnos, pero también puede ser una oportunidad para fortalecernos.'
+	]
+	return asustados[random.randint(0,len(asustados)-1)]
+
+def ansioso():
+	ansiosos = [
+		'Recuerda que tus sentimientos son válidos.',
+		'Aveces el futuro puede ser aterrador.',
+		'No te deberias abrumar por cosas que esten fuera de tu control.',
+		'Aplica el metodo de 5-4-3-2-1. 5 cosas que ves, 4 cosas que puedes tocar, 3 cosas que puedes escuchar, 2 cosas que puedes oler, 1 cosa que puedes saborear.'
+	]
+	return ansiosos[random.randint(0,len(ansiosos)-1)]
+
+def cansado():
+	cansados = [
+		'Tómate un descanso y haz algo que te haga feliz!',
+		'Organiza mejor tu tiempo y verás que el cansancio disminuirá!',
+		'Recuerda que también es fundamental descansar. No lo restes importancia!',
+		'Detrás de tu esfuerzo, hay una recompensa esperándote!'
+	]
+	return cansados[random.randint(0,len(cansados)-1)]
+
+def orgulloso():
+	orgullosos = [
+		'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+	]
+	return orgullosos[random.randint(0,len(orgullosos)-1)]
