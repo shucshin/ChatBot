@@ -21,6 +21,12 @@ def get_response(message: str) -> str:
 	if mensaje == 'preocupado':
 		return preocupado()
 
+	if mensaje == 'asustado':
+		return asustado()
+	
+	if mensaje == 'ansioso':
+		return ansioso()
+
 	return 'Lo siento, no te entendí'
 
 
@@ -67,3 +73,21 @@ def preocupado():
 		'La autocompasión es importante. Permítete sentir estas preocupaciones, pero también recuerda que estamos aquí para encontrar formas de superarlas juntos.'
 	]
 	return preocupados[random.randint(0,len(preocupados)-1)]
+
+def asustado():
+	asustados = [
+		'Respira profundo y recuerda que el miedo es una emoción natural.',
+		'Puede ser una señal de que estás fuera de tu zona de confort.',
+		'Incluso en los momentos más oscuros, siempre hay una luz al final del túnel.',
+		'El miedo puede paralizarnos, pero también puede ser una oportunidad para fortalecernos.'
+	]
+	return asustados[random.randint(0,len(asustados)-1)]
+
+def ansioso():
+	ansiosos = [
+		'Recuerda que tus sentimientos son válidos.',
+		'Aveces el futuro puede ser aterrador.',
+		'No te deberias abrumar por cosas que esten fuera de tu control.',
+		'Aplica el metodo de 5-4-3-2-1. 5 cosas que ves, 4 cosas que puedes tocar,3 cosas que puedes escuchar, 2 cosas que puedes oler,1 cosa que puedes saborear.'
+	]
+	return ansiosos[random.randint(0,len(ansiosos)-1)]
