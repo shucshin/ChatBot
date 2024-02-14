@@ -26,6 +26,12 @@ def get_response(message: str) -> str:
 	
 	if mensaje == 'ansioso':
 		return ansioso()
+	
+	if mensaje == 'cansado':
+		return cansado()
+	
+	if mensaje == 'orgulloso':
+		return orgulloso()
 
 	return 'Lo siento, no te entendí'
 
@@ -91,3 +97,21 @@ def ansioso():
 		'Aplica el metodo de 5-4-3-2-1. 5 cosas que ves, 4 cosas que puedes tocar, 3 cosas que puedes escuchar, 2 cosas que puedes oler, 1 cosa que puedes saborear.'
 	]
 	return ansiosos[random.randint(0,len(ansiosos)-1)]
+
+def cansado():
+	cansados = [
+		'Tómate un descanso y haz algo que te haga feliz!',
+		'Organiza mejor tu tiempo y verás que el cansancio disminuirá!',
+		'Recuerda que también es fundamental descansar. No lo restes importancia!',
+		'Detrás de tu esfuerzo, hay una recompensa esperándote!'
+	]
+	return cansados[random.randint(0,len(cansados)-1)]
+
+def orgulloso():
+	orgullosos = [
+		'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+	]
+	return orgullosos[random.randint(0,len(orgullosos)-1)]
