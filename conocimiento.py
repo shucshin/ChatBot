@@ -25,8 +25,9 @@ def conocimientoT():
                 r'.*buen(a|o)s (dias|tardes|noches).*',
             ],
             'respuesta': [
-                'Ah, Hola... ',
-                'Hola, soy una IA de conversación.'
+                'Hola, ¿Como te sientes el dia de hoy? ',
+                'Hola, ¿En que te puedo ayudar, como te sientes?',
+                'Hola, soy tu IA de ayuda ¿Dime como te sientes?'
             ]
         },
         #////////////////////////////////////////////////Chiste.
@@ -94,8 +95,8 @@ def conocimientoT():
             ],
             'respuesta': [
                 'No te entendí ¿Puedes repetirlo por favor?',
-                'Creo que no tengo información al respecto; lo siento',
-                'Disculpa, no comprendí lo que dices'
+                'Creo que no tengo información al respecto; lo siento mucho',
+                'Creo que no entiendo el problema, podrias ser un poco más concreto'
             ]
         }
         #////////////////////////////////////////////////
