@@ -180,7 +180,7 @@ def conocimientoT():
         {
             'intent': 'repetir',
             'regex': [
-                r'.*(cuentame|dime|saca) otr(o|a).*',
+                r'.*(cuentame|dime|saca|dame) otr(o|a).*',
             ],
             'respuesta': [
                 'Bueno...'
