@@ -167,17 +167,17 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_triste()
         elif self.contexto == 'FELIZ':
             return 'Aquí va otro: ' + consejo_feliz()
-        elif self.contexto == 'enojado':
+        elif self.contexto == 'ENOJADO':
             return 'Aquí va otro: ' + consejo_enojado()
-        elif self.contexto == 'preocupado':
+        elif self.contexto == 'PREOCUPADO':
             return 'Aquí va otro: ' + consejo_preocupado()
-        elif self.contexto == 'asustado':
+        elif self.contexto == 'ASUSTADO':
             return 'Aquí va otro: ' + consejo_asustado()
-        elif self.contexto == 'ansioso':
+        elif self.contexto == 'ANSIOSO':
             return 'Aquí va otro: ' + consejo_ansioso()
-        elif self.contexto == 'cansado':
+        elif self.contexto == 'CANSADO':
             return 'Aquí va otro: ' + consejo_cansado()
-        elif self.contexto == 'orgulloso':
+        elif self.contexto == 'ORGULLOSO':
             return 'Aquí va otro: ' + consejo_orgulloso()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
