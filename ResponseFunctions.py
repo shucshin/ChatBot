@@ -16,6 +16,18 @@ def dar_bienvenida():
     ]
     return random.choice(bienvenida)
 
+def ask_problem():
+    '''
+    Pregunta al usuario sobre su problema de forma aleatoria
+
+    :return una pregunta sobre cual fue el problema
+    :rtype str
+    '''
+    problema = [
+        'Dime'
+    ]
+    return random.choice(problema)
+
 def contar_chiste():
     '''
     Cuenta un chiste de forma aleatoria

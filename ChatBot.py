@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import dar_bienvenida, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso
+from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso
 
 class ChatBot:
     """
@@ -71,6 +71,8 @@ class ChatBot:
         intent = caso['intent']
         if intent == 'bienvenida':
             self.contexto = "BIENVENIDA"
+        elif intent == 'problema':
+            self.contexto = 'PROBLEMA'
         elif intent == 'triste':
             self.contexto = "TRISTE"
         elif intent == 'feliz':
@@ -125,6 +127,8 @@ class ChatBot:
         intent = caso['intent']
         if intent == 'bienvenida':
             return dar_bienvenida()
+        elif intent == 'problema':
+            return ask_problem()
         elif intent == 'chiste':
             return contar_chiste()
         elif intent == 'triste':

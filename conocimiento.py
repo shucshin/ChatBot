@@ -31,6 +31,26 @@ def conocimientoT():
                 'Soy Link++, tu doctor psicologico'
             ]
         },
+        #////////////////////////////////////////////////Problema.
+        {
+            # r is raw string (no format)
+            # if it contains this in my message, any elem of array 'respuesta' will execute
+            'intent': 'problema',
+            'regex': [ 
+                r'.*problema.*', 
+                r'.*situaci(ón|on).*',
+                r'.*conflicto.*',
+                r'.*dificultad.*',
+                r'.*complicaci(on|ón).*',
+                r'.*obst(á|a)culo.*',
+                r'.*inconveniente.*'
+            ],
+            'respuesta': [
+                'Cuentame un poco más',
+                '¿Como puedo ayudarte?',
+                '¿Que te sucedio?'
+            ]
+        },
         #////////////////////////////////////////////////Triste.
         {
             'intent': 'triste',
