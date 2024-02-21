@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import contar_chiste, despedida, poner_musica
+from ResponseFunctions import dar_bienvenida, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso
 
 class ChatBot:
     """
@@ -71,6 +71,22 @@ class ChatBot:
         intent = caso['intent']
         if intent == 'bienvenida':
             self.contexto = "BIENVENIDA"
+        elif intent == 'triste':
+            self.contexto = "TRISTE"
+        elif intent == 'feliz':
+            self.contexto = "FELIZ"
+        elif intent == 'enojado':
+            self.contexto = "ENOJADO"
+        elif intent == 'preocupado':
+            self.contexto = "PREOCUPADO"
+        elif intent == 'asustado':
+            self.contexto = "ASUSTADO"
+        elif intent == 'ansioso':
+            self.contexto = "ANSIOSO"
+        elif intent == 'cansado':
+            self.contexto = "CANSADO"
+        elif intent == 'orgulloso':
+            self.contexto = "ORGULLOSO"
         elif intent == 'chiste':
             self.contexto = "CHISTE"
         elif intent == 'musica':
@@ -107,8 +123,26 @@ class ChatBot:
         :rtype: str
         '''
         intent = caso['intent']
-        if intent == 'chiste':
+        if intent == 'bienvenida':
+            return dar_bienvenida()
+        elif intent == 'chiste':
             return contar_chiste()
+        elif intent == 'triste':
+            return consejo_triste()
+        elif intent == 'feliz':
+            return consejo_feliz()
+        elif intent == 'enojado':
+            return consejo_enojado()
+        elif intent == 'preocupado':
+            return consejo_preocupado()
+        elif intent == 'asustado':
+            return consejo_asustado()
+        elif intent == 'ansioso':
+            return consejo_ansioso()
+        elif intent == 'cansado':
+            return consejo_cansado()
+        elif intent == 'orgulloso':
+            return consejo_orgulloso()
         elif intent == 'musica':
             return poner_musica()
         elif intent == 'repetir':
@@ -129,6 +163,22 @@ class ChatBot:
         '''
         if self.contexto == 'CHISTE':
             return 'Aquí va otro: ' + contar_chiste()
+        elif self.contexto == 'TRISTE':
+            return 'Aquí va otro: ' + consejo_triste()
+        elif self.contexto == 'FELIZ':
+            return 'Aquí va otro: ' + consejo_feliz()
+        elif self.contexto == 'enojado':
+            return 'Aquí va otro: ' + consejo_enojado()
+        elif self.contexto == 'preocupado':
+            return 'Aquí va otro: ' + consejo_preocupado()
+        elif self.contexto == 'asustado':
+            return 'Aquí va otro: ' + consejo_asustado()
+        elif self.contexto == 'ansioso':
+            return 'Aquí va otro: ' + consejo_ansioso()
+        elif self.contexto == 'cansado':
+            return 'Aquí va otro: ' + consejo_cansado()
+        elif self.contexto == 'orgulloso':
+            return 'Aquí va otro: ' + consejo_orgulloso()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
         elif self.contexto == 'DEFAULT':

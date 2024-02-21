@@ -22,12 +22,104 @@ def conocimientoT():
             'intent': 'bienvenida',
             'regex': [ 
                 r'.*hola.*', 
-                r'.*buen(a|o)s (dias|tardes|noches).*',
+                r'.*quiero hablar.*',
+                r'.*buen(a|o)s (dias|tardes|noches).*'
             ],
             'respuesta': [
-                'Hola, ¿Como te sientes el dia de hoy? ',
-                'Hola, ¿En que te puedo ayudar, como te sientes?',
-                'Hola, soy tu IA de ayuda ¿Dime como te sientes?'
+                'Hola soy Link++, tu bot de estabilidad emocional',
+                'Hola soy Link++, tu bot de ayuda emocional',
+                'Soy Link++, tu doctor psicologico'
+            ]
+        },
+        #////////////////////////////////////////////////Triste.
+        {
+            'intent': 'triste',
+            'regex': [
+                r'.*triste.*',
+                r'.*desanimad(o|a).*'
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Feliz.
+        {
+            'intent': 'feliz',
+            'regex': [
+                r'.*feliz.*',
+                r'.*animad(o|a).*'
+            ],
+            'respuesta': [
+                'Que bueno...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Enojado.
+        {
+            'intent': 'enojado',
+            'regex': [
+                r'.*enojad(o|a).*',
+                r'.*furios(o|a).*'
+            ],
+            'respuesta': [
+                'Oye calma...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Preocupado.
+        {
+            'intent': 'preocupado',
+            'regex': [
+                r'.*preocupad(o|a).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Asustado.
+        {
+            'intent': 'asustado',
+            'regex': [
+                r'.*asustad(o|a).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Ansioso.
+        {
+            'intent': 'ansioso',
+            'regex': [
+                r'.*ansios(o|a).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Cansado.
+        {
+            'intent': 'cansado',
+            'regex': [
+                r'.*cansad(o|a).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Orgulloso.
+        {
+            'intent': 'orgulloso',
+            'regex': [
+                r'.*orgullos(o|a).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
             ]
         },
         #////////////////////////////////////////////////Chiste.
@@ -42,7 +134,7 @@ def conocimientoT():
                 'Ahí te va'
             ]
         },
-        #////////////////////////////////////////////////Chiste.
+        #////////////////////////////////////////////////Estado.
         {
             'intent': 'estado',
             'regex': [
@@ -81,7 +173,8 @@ def conocimientoT():
                 r'.*salir.*',
                 r'.*adios.*',
                 r'.*bye.*',
-                r'.*hasta luego.*'
+                r'.*hasta luego.*',
+                r'.*nos vemos.*'
             ],
             'respuesta': [
                 ''
