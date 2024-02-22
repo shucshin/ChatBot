@@ -176,6 +176,67 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
+        #////////////////////////////////////////////////Rumor sobre ti 
+        {
+            'intent': 'rumor',
+            'regex': [
+                r'.*rumor sobre mi.*',
+                r'.*rumor mio.*'
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Persona que entra en crisis existencial
+        {
+            'intent': 'crisis',
+            'regex': [
+                r'.*no se quien soy.*',
+                r'.*no se que estoy haciendo con mi vida.*'
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Persona que sabe que esta en un estado de depresión
+        {
+            'intent': 'depresion',
+            'regex': [
+                r'.*siento que estoy deprimido.*',
+                r'.*estoy en depresion.*',
+                r'.*siento deprimido.*'
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Sentiminetos de soledad
+        {
+            'intent': 'soledad',
+            'regex': [
+                r'.*siento solo.*',
+                r'.*estoy solo.*',
+                r'.*siento completamente solo.*',
+                r'.*no tengo a nadie.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Para pedir ayuda psicologica profesional
+        {
+            'intent': 'ayuda',
+            'regex': [
+                r'.*ayuda psicol(o|ó)gica.*'
+            ],
+            'respuesta': [
+                'Estos son los numeros y correos para ayuda psicologica: ',
+            ]
+        },
         #////////////////////////////////////////////////Chiste.
         {
             'intent': 'chiste',

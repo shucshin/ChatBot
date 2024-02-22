@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine
+from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, ayuda_psicologica
 
 class ChatBot:
     """
@@ -95,6 +95,16 @@ class ChatBot:
             self.contexto = 'DISCUSION'
         elif intent == 'termine':
             self.contexto = 'TERMINE'
+        elif intent == 'rumor':
+            self.contexto = 'RUMOR'
+        elif intent == 'crisis':
+            self.contexto = 'CRISIS'
+        elif intent == 'depresion':
+            self.contexto = 'DEPRESION'
+        elif intent == 'soledad':
+            self.contexto = 'SOLEDAD'
+        elif intent == 'ayuda':
+            self.contexto = 'AYUDA'
         elif intent == 'chiste':
             self.contexto = "CHISTE"
         elif intent == 'musica':
@@ -159,6 +169,16 @@ class ChatBot:
             return consejo_discusion()
         elif intent == 'termine':
             return consejo_termine()
+        elif intent == 'rumor':
+            return consejo_rumor()
+        elif intent == 'crisis':
+            return consejo_crisis()
+        elif intent == 'depresion':
+            return consejo_depresion()
+        elif intent == 'soledad':
+            return consejo_soledad()
+        elif intent == 'ayuda':
+            return ayuda_psicologica()
         elif intent == 'musica':
             return poner_musica()
         elif intent == 'repetir':
@@ -201,6 +221,14 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_discusion()
         elif self.contexto == 'TERMINE':
             return 'Aquí va otro: ' + consejo_termine()
+        elif self.contexto == 'RUMOR':
+            return 'Aquí va otro: ' + consejo_rumor()
+        elif self.contexto == 'CRISIS':
+            return 'Aquí va otro: ' + consejo_crisis()
+        elif self.contexto == 'DEPRESION':
+            return 'Aquí va otro: ' + consejo_depresion()
+        elif self.contexto == 'SOLEDAD':
+            return 'Aquí va otro: ' + consejo_soledad()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
         elif self.contexto == 'DEFAULT':

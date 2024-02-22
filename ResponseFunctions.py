@@ -210,6 +210,81 @@ def consejo_termine():
     ]
     return random.choice(termine)
 
+def consejo_rumor():
+    '''
+    Proporciona un consejo para cuando escuchas rumores sobre ti, forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    rumor = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(rumor)
+
+def consejo_crisis():
+    '''
+    Proporciona un consejo para cuando entras en estado de crisis existencial, forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    crisis = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(crisis)
+
+def consejo_depresion():
+    '''
+    Proporciona un consejo para cuando estas en estado de depresion, forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    depresion = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(depresion)
+
+def consejo_soledad():
+    '''
+    Proporciona un consejo para cuando te sientas solo, forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    soledad = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(soledad)
+
+def ayuda_psicologica():
+    '''
+    Proporciona un los medios para contactar una ayuda profesional
+
+    :return  Medios para contactar una ayuda profesional
+    :rtype str
+    '''
+    ayuda = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(ayuda)
+
 def poner_musica():
     '''
     Función que devuelve una canción de YT aleatoria
