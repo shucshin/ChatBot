@@ -248,7 +248,7 @@ def consejo_depresion():
     '''
     depresion = [
         'No tengas miedo de pedir ayuda.',
-        'Haz cosas pequeñas que te den placer o te ayuden a relajarte, como salir a caminar, escuchar música o practicar técnicas de respiración.',
+        'Haz cosas pequeñas que te den placer o te ayuden a relajarte.',
         'Habla con un profesional de la salud mental sobre cómo te sientes.',
         'No estas solo. Hay gente que te quiere mucho.'
     ]
@@ -263,7 +263,7 @@ def consejo_soledad():
     '''
     soledad = [
         'Busca actividades que te gusten y te permitan conocer gente nueva.',
-        'Mantente en contacto con amigos y familiares, incluso si es a través de llamadas telefónicas o videollamadas.',
+        'Mantente en contacto con amigos y familiares.',
         'Considera adoptar una mascota.',
         'Considera buscar ayuda profesional.'
     ]
