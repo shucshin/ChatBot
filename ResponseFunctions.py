@@ -173,7 +173,10 @@ def consejo_pelea():
     :rtype str
     '''
     pelea = [
-        'Vacio'
+        'Trata de comunicarte de manera calmada.',
+        'Siempre antes de destruir hay que construir. Aplica para retroalimentacion tambien',
+        'No temas pedir disculpas si es necesario.',
+        'Recuerda que es normal tener diferencias.'
     ]
     return random.choice(pelea)
 
@@ -185,10 +188,12 @@ def consejo_discusion():
     :rtype str
     '''
     discusion = [
-        'Vacio'
+        'Escucha activamente a la otra persona y trata de entender su perspectiva.',
+        'Mantén la calma y evita caer en la provocación.',
+        'Intenta encontrar puntos en común y construir a partir de ahí para llegar a un acuerdo.',
+        'No olvides que el respeto mutuo es fundamental.'
     ]
     return random.choice(discusion)
-
 def consejo_termine():
     '''
     Proporciona un consejo para cuando terminas con alguien o ya no quieres saber de la persona, forma aleatoria
@@ -197,7 +202,10 @@ def consejo_termine():
     :rtype str
     '''
     termine = [
-        'Vacio'
+        'Dale tiempo al tiempo y permítete sanar.',
+        'Aprovecha este momento para enfocarte en ti mismo.',
+        'Recuerda que terminar una relación no define tu valía como persona.',
+        'El respeto post relacion dice mucho de ti, recuerda eso.'
     ]
     return random.choice(termine)
 
@@ -209,7 +217,10 @@ def consejo_rumor():
     :rtype str
     '''
     rumor = [
-        'Vacio'
+        'Mantén la calma y no reacciones de forma impulsiva.',
+        'No te obsesiones con lo que otros puedan decir de ti.',
+        'Que la gente hable es sinonimo de que estas avanzando.',
+        'Mantente fiel a ti mismo y sigue adelante.'
     ]
     return random.choice(rumor)
 
@@ -221,7 +232,10 @@ def consejo_crisis():
     :rtype str
     '''
     crisis = [
-        'Vacio',
+        'Date tiempo para reflexionar sobre tus valores, metas y prioridades en la vida.',
+        'Habla con amigos cercanos o familiares de confianza sobre tus sentimientos.',
+        'Recuerda la regla de 5 4 3 2 1.',
+        'Recuerda que las crisis existenciales son experiencias comunes a esta edad.'
     ]
     return random.choice(crisis)
 
@@ -233,7 +247,10 @@ def consejo_depresion():
     :rtype str
     '''
     depresion = [
-        'Vacio'
+        'No tengas miedo de pedir ayuda.',
+        'Haz cosas pequeñas que te den placer o te ayuden a relajarte, como salir a caminar, escuchar música o practicar técnicas de respiración.',
+        'Habla con un profesional de la salud mental sobre cómo te sientes.',
+        'No estas solo. Hay gente que te quiere mucho.'
     ]
     return random.choice(depresion)
 
@@ -245,7 +262,10 @@ def consejo_soledad():
     :rtype str
     '''
     soledad = [
-        'Vacio',
+        'Busca actividades que te gusten y te permitan conocer gente nueva.',
+        'Mantente en contacto con amigos y familiares, incluso si es a través de llamadas telefónicas o videollamadas.',
+        'Considera adoptar una mascota.',
+        'Considera buscar ayuda profesional.'
     ]
     return random.choice(soledad)
 
@@ -257,8 +277,11 @@ def ayuda_psicologica():
     :rtype str
     '''
     ayuda = [
-        'Vacio',
-    ]
+        'Si sientes que necesitas apoyo adicional, no dudes en comunicarte con un profesional de la salud mental.',
+        'Las líneas de ayuda telefónica también pueden ser una opción útil.',
+        'Algunas organizaciones ofrecen servicios de consejería en línea.',
+        'Busca la clinica de salud mental mas cercana a tu domicilio y asiste. Ya hiciste lo mas dificil que es reconocer se necesita ayuda.'
+       ] 
     return random.choice(ayuda)
 
 def poner_musica():
