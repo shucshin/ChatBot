@@ -277,11 +277,8 @@ def ayuda_psicologica():
     :rtype str
     '''
     ayuda = [
-        'Si sientes que necesitas apoyo adicional, no dudes en comunicarte con un profesional de la salud mental.',
-        'Las líneas de ayuda telefónica también pueden ser una opción útil.',
-        'Algunas organizaciones ofrecen servicios de consejería en línea.',
-        'Busca la clinica de salud mental mas cercana a tu domicilio y asiste. Ya hiciste lo mas dificil que es reconocer se necesita ayuda.'
-       ] 
+	'Vacio',
+    ] 
     return random.choice(ayuda)
 
 def poner_musica():
