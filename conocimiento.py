@@ -146,7 +146,7 @@ def conocimientoT():
         {
             'intent': 'pelea',
             'regex': [
-                r'.*me pelie.*',
+                r'.*me pele(é|e).*',
             ],
             'respuesta': [
                 'Mira...',
