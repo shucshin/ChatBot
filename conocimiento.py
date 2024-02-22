@@ -169,6 +169,7 @@ def conocimientoT():
             'intent': 'termine',
             'regex': [
                 r'.*termine con mi (novio|novia|amistad|relaci(ó|o)n).*',
+                r'.*termine una (amistad|relaci(o|ó)n).*'
             ],
             'respuesta': [
                 'Mira...',
