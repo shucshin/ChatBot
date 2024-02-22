@@ -173,10 +173,7 @@ def consejo_pelea():
     :rtype str
     '''
     pelea = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio'
     ]
     return random.choice(pelea)
 
@@ -188,10 +185,7 @@ def consejo_discusion():
     :rtype str
     '''
     discusion = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio'
     ]
     return random.choice(discusion)
 
@@ -203,10 +197,7 @@ def consejo_termine():
     :rtype str
     '''
     termine = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio'
     ]
     return random.choice(termine)
 
@@ -218,10 +209,7 @@ def consejo_rumor():
     :rtype str
     '''
     rumor = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio'
     ]
     return random.choice(rumor)
 
@@ -233,10 +221,7 @@ def consejo_crisis():
     :rtype str
     '''
     crisis = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio',
     ]
     return random.choice(crisis)
 
@@ -248,10 +233,7 @@ def consejo_depresion():
     :rtype str
     '''
     depresion = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio'
     ]
     return random.choice(depresion)
 
@@ -263,10 +245,7 @@ def consejo_soledad():
     :rtype str
     '''
     soledad = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio',
     ]
     return random.choice(soledad)
 
@@ -278,10 +257,7 @@ def ayuda_psicologica():
     :rtype str
     '''
     ayuda = [
-        'En hora buena! Sigue esforzándote!',
-		'Lo estás haciendo bien! Sigue así!',
-		'Vas por buen camino! No te rindas!',
-		'Estoy feliz por ti!!'
+        'Vacio',
     ]
     return random.choice(ayuda)
 
