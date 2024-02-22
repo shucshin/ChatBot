@@ -142,6 +142,39 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
+        #////////////////////////////////////////////////Pelea con algun conocido.
+        {
+            'intent': 'pelea',
+            'regex': [
+                r'.*me pelie.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Pelea con algun conocido.
+        {
+            'intent': 'discusion',
+            'regex': [
+                r'.*discut(i|í).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Terminas alguna relacion con alguine conocido.
+        {
+            'intent': 'termine',
+            'regex': [
+                r'.*termine con mi (novio|novia|amistad|relaci(ó|o)n).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
         #////////////////////////////////////////////////Chiste.
         {
             'intent': 'chiste',

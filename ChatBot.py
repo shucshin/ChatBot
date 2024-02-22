@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso
+from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine
 
 class ChatBot:
     """
@@ -89,6 +89,12 @@ class ChatBot:
             self.contexto = "CANSADO"
         elif intent == 'orgulloso':
             self.contexto = "ORGULLOSO"
+        elif intent == 'pelea':
+            self.contexto = 'PELEA'
+        elif intent == 'discusion':
+            self.contexto = 'DISCUSION'
+        elif intent == 'termine':
+            self.contexto = 'TERMINE'
         elif intent == 'chiste':
             self.contexto = "CHISTE"
         elif intent == 'musica':
@@ -147,6 +153,12 @@ class ChatBot:
             return consejo_cansado()
         elif intent == 'orgulloso':
             return consejo_orgulloso()
+        elif intent == 'pelea':
+            return consejo_pelea()
+        elif intent == 'discusion':
+            return consejo_discusion()
+        elif intent == 'termine':
+            return consejo_termine()
         elif intent == 'musica':
             return poner_musica()
         elif intent == 'repetir':
@@ -183,6 +195,12 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_cansado()
         elif self.contexto == 'ORGULLOSO':
             return 'Aquí va otro: ' + consejo_orgulloso()
+        elif self.contexto == 'PELEA':
+            return 'Aquí va otro: ' + consejo_pelea()
+        elif self.contexto == 'DISCUCION':
+            return 'Aquí va otro: ' + consejo_discusion()
+        elif self.contexto == 'TERMINE':
+            return 'Aquí va otro: ' + consejo_termine()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
         elif self.contexto == 'DEFAULT':

@@ -165,6 +165,51 @@ def consejo_orgulloso():
     ]
     return random.choice(orgulloso)
 
+def consejo_pelea():
+    '''
+    Proporciona un consejo para cuando te peleaste con alguien de forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    pelea = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(pelea)
+
+def consejo_discusion():
+    '''
+    Proporciona un consejo para cuando discutes con alguien de forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    discusion = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(discusion)
+
+def consejo_termine():
+    '''
+    Proporciona un consejo para cuando terminas con alguien o ya no quieres saber de la persona, forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    termine = [
+        'En hora buena! Sigue esforzándote!',
+		'Lo estás haciendo bien! Sigue así!',
+		'Vas por buen camino! No te rindas!',
+		'Estoy feliz por ti!!'
+    ]
+    return random.choice(termine)
+
 def poner_musica():
     '''
     Función que devuelve una canción de YT aleatoria
