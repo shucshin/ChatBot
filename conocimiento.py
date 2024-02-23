@@ -17,8 +17,6 @@ def conocimientoT():
     conocimiento = [
         #////////////////////////////////////////////////Bienvenida.
         {
-            # r is raw string (no format)
-            # if it contains this in my message, any elem of array 'respuesta' will execute
             'intent': 'bienvenida',
             'regex': [ 
                 r'.*hola.*', 
@@ -33,8 +31,6 @@ def conocimientoT():
         },
         #////////////////////////////////////////////////Problema.
         {
-            # r is raw string (no format)
-            # if it contains this in my message, any elem of array 'respuesta' will execute
             'intent': 'problema',
             'regex': [ 
                 r'.*problema.*', 
