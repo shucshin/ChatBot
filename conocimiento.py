@@ -448,7 +448,10 @@ def conocimientoT():
         {
             'intent': 'perfeccionismo',
             'regex': [
-                r'.*.*',
+                r'.*quiero hacer todo bien.*',
+                r'.*pienso en cada detalle.*',
+                r'.*logro hacer las cosas (excelentes|bien) pero no estoy satisfecho.*',
+                r'.*intento hacer (siempre m(a|á)s|m(a|á)s).*'
             ],
             'respuesta': [
                 'Mira...',
@@ -459,110 +462,118 @@ def conocimientoT():
         {
             'intent': 'fracaso',
             'regex': [
-                r'.*.*',
+                r'.*fracaso en (todo|algunas cosas|mis objetivos| la escuela).*',
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'piensa'
             ]
         },
         #//////////////////////////////////////////////// Preocupacion economica
         {
             'intent': 'economico',
             'regex': [
-                r'.*.*',
+                r'.*economia me afecta.*',
+                r'.*consigo alguna beca.*',
+                r'.*pienso en buscar trabajo.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'es complicado'
             ]
         },
         #//////////////////////////////////////////////// Problemas de comunicación
         {
             'intent': 'comunicacion',
             'regex': [
-                r'.*.*',
+                r'.*es dificil (comunicarme|hablar) con alguien.*',
+                r'.*no puedo relacionarme.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'no todos'
             ]
         },
         #//////////////////////////////////////////////// Inseguridad
         {
             'intent': 'inseguridad',
             'regex': [
-                r'.*.*',
+                r'.*no estoy seguro.*',
+                r'.*mi inseguridad es.*',
+                r'.*estoy inseguro cuando.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes'
             ]
         },
         #//////////////////////////////////////////////// Tecnicas de estudio
         {
             'intent': 'tecnicas estudio',
             'regex': [
-                r'.*.*',
+                r'.*me cuesta (aprender|(trabajo|dificil|complicado) estudiar|concentrarme).*',
+                r'.*me es (dificil|complicado) (estudiar|concentrarme).*',
+                r'.*se me complica (estudiar|hacer tarea|trabajar).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'te voy a dar un tip para estudiar'
             ]
         },
         #//////////////////////////////////////////////// Sindrome del impostor
         {
             'intent': 'impostor',
             'regex': [
-                r'.*.*',
+                r'.*siento que no soy lo que (parece|muestro) ser.*',
+                r'.*no me siento feliz con.*',
+                r'.*no me siento capaz.*'
+
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'piensa'
             ]
         },
         #//////////////////////////////////////////////// Estres
         {
             'intent': 'estres',
             'regex': [
-                r'.*.*',
+                r'.*(siento|estoy|nunca habia estado) estresado.*',
+                r'.*es mucho estres.*',
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'tienes que'
             ]
         },
         #//////////////////////////////////////////////// Problemas para toma de desiciones
         {
             'intent': 'indesicion',
             'regex': [
-                r'.*.*',
+                r'.*no logro (elegir|decidir).*',
+                r'.*me es dificil (elegir|decidir).*',
+                r'.*(siento|estoy) indeciso.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'toma en cuenta que'
             ]
         },
         #////////////////////////////////////////////////Miedo a participar en clase
         {
             'intent': 'miedo participar',
             'regex': [
-                r'.*.*',
+                r'.*(siento|tengo) (miedo|temor) a partipar.*',
+                r'.*(pienso|siento) que se van burlar de mi.*',
+                r'.*que piensan de mi cuando participo.*'
+
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                ''
             ]
         },
         #//////////////////////////////////////////////// Confusion entre lo personal y lo academico
         {
             'intent': 'dividir personal y academico',
             'regex': [
-                r'.*.*',
+                r'.*se me combinaron los problemas academicos y personales.*',
+                r'.*convine (lo personal y lo academico|lo academico y lo personal).*'
+                
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'intenta'
             ]
         },
         #//////////////////////////////////////////////// Incertidumbre de sentimientos a otra persona
@@ -576,8 +587,7 @@ def conocimientoT():
                 r'.*sentimientos encontrados.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes'
             ]
         },
         #//////////////////////////////////////////////// No lograr expresar sentimientos adecuadamente
