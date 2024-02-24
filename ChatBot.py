@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import dar_bienvenida, ask_problem, solucion, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, consejo_licenciatura, consejo_poderoso, consejo_pensativo, consejo_frustacion, consejo_carga_trabajo, consejo_examenes, consejo_problema_profesor_ayudante, consejo_desconcentrado, consejo_desmotivado, consejo_gestion_tiempo, consejo_presion_familiar, consejo_autestima_bajo, consejo_duda_futuro, consejo_pasado_complicado, consejo_presion_social, consejo_insomnio, consejo_duda_capacida_academica, consejo_procrastinacion, consejo_duelo, consejo_metas_no_cumplidas, consejo_perfeccionismo, consejo_fracaso, consejo_economico, consejo_comunicacion, consejo_inseguridad, consejo_tecnicas_estudio, consejo_impostor, consejo_estres, consejo_indesicion, consejo_miedo_participar, consejo_dividir_personal_y_academico, consejo_confucion_sentimientos, consejo_expresar_sentiminetos, consejo_espacio_personal, consejo_remordimiento, consejo_envidia, consejo_desesperanza, consejo_fisico, ayuda_psicologica
+from ResponseFunctions import dar_bienvenida, ask_problem, solucion, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, consejo_licenciatura, consejo_poderoso, consejo_pensativo, consejo_frustacion, consejo_carga_trabajo, consejo_examenes, consejo_desconcentrado, consejo_desmotivado, consejo_gestion_tiempo, consejo_presion_familiar, consejo_autestima_bajo, consejo_duda_futuro, consejo_presion_social, consejo_insomnio, consejo_duda_capacida_academica, consejo_procrastinacion, consejo_duelo, consejo_metas_no_cumplidas, consejo_perfeccionismo, consejo_fracaso, consejo_economico, consejo_comunicacion, consejo_inseguridad, consejo_tecnicas_estudio, consejo_impostor, consejo_estres, consejo_indesicion, consejo_miedo_participar, consejo_dividir_personal_y_academico, consejo_confucion_sentimientos, consejo_expresar_sentiminetos, consejo_espacio_personal, consejo_remordimiento, consejo_envidia, consejo_desesperanza, consejo_fisico, ayuda_psicologica
 
 class ChatBot:
     """
@@ -115,8 +115,6 @@ class ChatBot:
             self.contexto = 'CARGA TRABAJO'
         elif intent == 'examenes':
             self.contexto = 'EXAMENES'
-        elif intent == 'problema profesor/ayudante':
-            self.contexto = 'PROBLEMA PROFESOR/AYUDANTE'
         elif intent == 'desconcentrado':
             self.contexto = 'DESCONCENTRADO'
         elif intent == 'desmotivado':
@@ -129,8 +127,6 @@ class ChatBot:
             self.contexto = 'AUTESTIMA BAJO'
         elif intent == 'duda futuro':
             self.contexto = 'DUDA FUTURO'
-        elif intent == 'pasado complicado':
-            self.contexto = 'PASADO COMPLICADO'
         elif intent == 'presion social':
             self.contexto = 'PRESION SOCIAL'
         elif intent == 'insomnio':
@@ -179,6 +175,8 @@ class ChatBot:
             self.contexto = 'FISICO'
         elif intent == 'ayuda':
             self.contexto = 'AYUDA'
+        elif intent == 'economico':
+            self.contexto = 'ECONOMICO'
         elif intent == 'solucion':
             self.contexto = "SOLUCION"
         elif intent == 'musica':
@@ -263,8 +261,6 @@ class ChatBot:
             return consejo_carga_trabajo() 
         elif intent == 'examenes':
             return consejo_examenes() 
-        elif intent == 'problema profesor/ayudante':
-            return consejo_problema_profesor_ayudante() 
         elif intent == 'desconcentrado':
             return consejo_desconcentrado() 
         elif intent == 'desmotivado':
@@ -277,8 +273,6 @@ class ChatBot:
             return consejo_autestima_bajo() 
         elif intent == 'duda futuro':
             return consejo_duda_futuro() 
-        elif intent == 'pasado complicado':
-            return consejo_pasado_complicado() 
         elif intent == 'presion social':
             return consejo_presion_social() 
         elif intent == 'insomnio':
@@ -325,6 +319,8 @@ class ChatBot:
             return consejo_desesperanza() 
         elif intent == 'fisico':
             return consejo_fisico() 
+        elif intent == 'economico':
+            return consejo_economico()
         elif intent == 'ayuda':
             return ayuda_psicologica()
         elif intent == 'musica':
@@ -389,8 +385,6 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_carga_trabajo()
         elif self.contexto == 'EXAMENES':
             return 'Aquí va otro: ' + consejo_examenes()
-        elif self.contexto == 'PROBLEMA PROFESOR/AYUDANTE':
-            return 'Aquí va otro: ' + consejo_problema_profesor_ayudante()
         elif self.contexto == 'DESCONCENTRADO':
             return 'Aquí va otro: ' + consejo_desconcentrado()
         elif self.contexto == 'DESMOTIVADO':
@@ -403,8 +397,6 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_autestima_bajo()
         elif self.contexto == 'DUDA FUTURO':
             return 'Aquí va otro: ' + consejo_duda_futuro()
-        elif self.contexto == 'PASADO COMPLICADO':
-            return 'Aquí va otro: ' + consejo_pasado_complicado()
         elif self.contexto == 'PRESION SOCIAL':
             return 'Aquí va otro: ' + consejo_presion_social()
         elif self.contexto == 'INSOMNIO':
@@ -451,6 +443,8 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_desesperanza()
         elif self.contexto == 'FISICO':
             return 'Aquí va otro: ' + consejo_fisico()
+        elif self.contexto == 'ECONOMICO':
+            return 'Aquí va otro: ' + consejo_economico()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
         elif self.contexto == 'DEFAULT':

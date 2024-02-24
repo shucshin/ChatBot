@@ -337,18 +337,6 @@ def consejo_examenes():
     ]
     return random.choice(examenes)
 
-def consejo_problema_profesor_ayudante():
-    '''
-    Proporciona un consejo para cuando , forma aleatoria
-
-    :return El consejo que se va a dar
-    :rtype str
-    '''
-    problema_profesor_ayudante = [
-        'vacio'
-    ]
-    return random.choice(problema_profesor_ayudante)
-
 def consejo_desconcentrado():
     '''
     Proporciona un consejo para cuando , forma aleatoria
@@ -421,17 +409,6 @@ def consejo_duda_futuro():
     ]
     return random.choice(duda_futuro)
 
-def consejo_pasado_complicado():
-    '''
-    Proporciona un consejo para cuando , forma aleatoria
-
-    :return El consejo que se va a dar
-    :rtype str
-    '''
-    pasado_complicado = [
-        'vacio'
-    ]
-    return random.choice(pasado_complicado)
 
 def consejo_presion_social():
     '''

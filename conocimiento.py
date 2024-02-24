@@ -290,17 +290,6 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
-        #////////////////////////////////////////////////Prblema proferoes o ayudantes
-        {
-            'intent': 'problema profesor/ayudante',
-            'regex': [
-                r'.*.*',
-            ],
-            'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
-            ]
-        },
         #////////////////////////////////////////////////Desconcentrado
         {
             'intent': 'desconcentrado',
@@ -367,81 +356,71 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
-        #////////////////////////////////////////////////Pasado que pesa
-        {
-            'intent': 'pasado complicado',
-            'regex': [
-                r'.*.*',
-            ],
-            'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
-            ]
-        },
         #////////////////////////////////////////////////Presion social
         {
             'intent': 'presion social',
             'regex': [
-                r'.*.*',
+                r'.*comparo con los demas.*',
+                r'.*veo como los demas.*',
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'no debes '
             ]
         },
         #////////////////////////////////////////////////Insomnio
         {
             'intent': 'insomnio',
             'regex': [
-                r'.*.*',
+                r'.*(no logro|me cuesta) dormir.*',
+                r'.*me siento (agotado|cansado|con sueño).*',
+                r'.*toda la noche estoy despierto.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'la salud es importante y por eso te '
             ]
         },
         #////////////////////////////////////////////////Capacidad academica
         {
             'intent': 'duda capacida academica',
             'regex': [
-                r'.*.*',
+                r'.*no me siento capaz (academicamente|para la carrera|en la escuela).*',
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes confiar que'
             ]
         },
         #////////////////////////////////////////////////Procrastinacion
         {
             'intent': 'procrastinacion',
             'regex': [
-                r'.*.*',
+                r'.*da flojera.*',
+                r'.*no quiero (hacer tarea|estudiar).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'eso es malo porque es tu furuto y '
             ]
         },
         #////////////////////////////////////////////////Perdida Familiar
         {
             'intent': 'duelo',
             'regex': [
-                r'.*.*',
+                r'.*pasando por una (perdida|fallecimiento de un (familiar|amig(a|o))).*',
+                r'.*perdi a (un amig(o|a)|un familiar)).*',
+                r'.*fallecio mi (padre|madre|pap(a|á)|mam(a|á)|herman(o|a)|familiar|amig(o|a)).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'es complicado y te recomiendo'
             ]
         },
         #////////////////////////////////////////////////No logro metas
         {
             'intent': 'metas no cumplidas',
             'regex': [
-                r'.*.*',
+                r'.*no tengo claro mis (objetivos|metas).*',
+                r'.*dudo de mis (objetivos|metas).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'concentrate'
             ]
         },
         #////////////////////////////////////////////////Trastorno perfeccionista
@@ -454,8 +433,7 @@ def conocimientoT():
                 r'.*intento hacer (siempre m(a|á)s|m(a|á)s).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'ten cuidado'
             ]
         },
         #////////////////////////////////////////////////Miedo fracaso
