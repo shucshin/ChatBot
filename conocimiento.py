@@ -223,6 +223,17 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
+        #////////////////////////////////////////////////Sentimiento de confusion en estudios
+        {
+            'intent': 'licenciatura',
+            'regex': [
+                r'.*no se si (elegi|seleccione|estudie) la (carrera|licenciatura) (correcta|adecuada).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
         #////////////////////////////////////////////////Para pedir ayuda psicologica profesional
         {
             'intent': 'ayuda',

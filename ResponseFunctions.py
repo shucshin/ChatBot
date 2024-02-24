@@ -269,6 +269,20 @@ def consejo_soledad():
     ]
     return random.choice(soledad)
 
+def consejo_licenciatura():
+    '''
+    Proporciona un consejo para cuando no sepas porque estudiaste cierta carrera, forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    licenciatura = [
+        'vacio'
+    ]
+    return random.choice(licenciatura)
+
+    
+
 def ayuda_psicologica():
     '''
     Proporciona un los medios para contactar una ayuda profesional

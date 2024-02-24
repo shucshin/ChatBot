@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, ayuda_psicologica
+from ResponseFunctions import dar_bienvenida, ask_problem, contar_chiste, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, consejo_licenciatura, ayuda_psicologica
 
 class ChatBot:
     """
@@ -103,6 +103,8 @@ class ChatBot:
             self.contexto = 'DEPRESION'
         elif intent == 'soledad':
             self.contexto = 'SOLEDAD'
+        elif intent == 'licenciatura':
+            self.contexto = 'LICENCIATURA'
         elif intent == 'ayuda':
             self.contexto = 'AYUDA'
         elif intent == 'chiste':
@@ -177,6 +179,8 @@ class ChatBot:
             return consejo_depresion()
         elif intent == 'soledad':
             return consejo_soledad()
+        elif intent == 'licenciatura':
+            return consejo_licenciatura()
         elif intent == 'ayuda':
             return ayuda_psicologica()
         elif intent == 'musica':
@@ -229,6 +233,8 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_depresion()
         elif self.contexto == 'SOLEDAD':
             return 'Aquí va otro: ' + consejo_soledad()
+        elif self.contexto == 'LICENCIATURA':
+            return 'Aquí va otro: ' + consejo_licenciatura()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
         elif self.contexto == 'DEFAULT':
