@@ -349,7 +349,10 @@ def conocimientoT():
         {
             'intent': 'duda futuro',
             'regex': [
-                r'.*.*',
+                r'.*va ser de mi en un futuro.*',
+                r'.*me preocupa mi futuro.*',
+                r'.*que va ser de mi en el futuro.*',
+                r'.*aun no se sobre mi futuro.*'
             ],
             'respuesta': [
                 'Mira...',
