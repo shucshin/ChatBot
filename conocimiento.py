@@ -569,7 +569,11 @@ def conocimientoT():
         {
             'intent': 'confucion sentimientos',
             'regex': [
-                r'.*.*',
+                r'.*no se como sentirme.*',
+                r'.*siento algo por.*',
+                r'.*me confunde como sentirme.*',
+                r'.*no se que es lo quiere.*',
+                r'.*sentimientos encontrados.*'
             ],
             'respuesta': [
                 'Mira...',
@@ -580,33 +584,33 @@ def conocimientoT():
         {
             'intent': 'expresar sentiminetos',
             'regex': [
-                r'.*.*',
+                r'.*no se como (expresar|hablar sobre) mis sentimientos.*',
+                r'.*siento mal al no poder expresar mis sentimientos.*',
+                r'.*es complicado (expresar|hablar de) como me siento.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes intentar'
             ]
         },
         #//////////////////////////////////////////////// Espacio personal
         {
             'intent': 'espacio personal',
             'regex': [
-                r'.*.*',
+                r'.*abruma.*',
+                r'.*(ella|el) hace que me sienta (incomod(a|o)|abrumad(a|o)).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'es muy importante'
             ]
         },
         #//////////////////////////////////////////////// remordimiento
         {
             'intent': 'remordimiento',
             'regex': [
-                r'.*.*',
+                r'.*remuerde.*',
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes concentrarte cuando'
             ]
         },
         #//////////////////////////////////////////////// envidia
@@ -617,8 +621,7 @@ def conocimientoT():
                 r'.*(me molesta|odio|fastidio) que sea mejor.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'no tienes que'
             ]
         },
         #//////////////////////////////////////////////// desesperanza
@@ -630,8 +633,7 @@ def conocimientoT():
                 r'.*(no tengo|me siento sin) esperanza.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'yo digo que'
             ]
         },
         #////////////////////////////////////////////////Salud fisica 
@@ -642,7 +644,7 @@ def conocimientoT():
                 r'.*tengo (cansancio|agotamiento|fatiga).*'
             ],
             'respuesta': [
-                'es importante'
+                'es importante que'
             ]
         },
         #////////////////////////////////////////////////Para pedir ayuda psicologica profesional
