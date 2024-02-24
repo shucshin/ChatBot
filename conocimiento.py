@@ -652,16 +652,14 @@ def conocimientoT():
                 'Estos son los numeros y correos para ayuda psicologica: ',
             ]
         },
-        #////////////////////////////////////////////////Chiste.
+        #////////////////////////////////////////////////solución
         {
-            'intent': 'chiste',
+            'intent': 'solucion',
             'regex': [
-                r'.*chiste.*',
-                r'.*broma.*'
+                r'.*.*'
             ],
             'respuesta': [
-                'Bien',
-                'Ahí te va'
+                ''
             ]
         },
         #////////////////////////////////////////////////Estado.

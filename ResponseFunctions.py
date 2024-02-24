@@ -28,22 +28,18 @@ def ask_problem():
     ]
     return random.choice(problema)
 
-def contar_chiste():
+def solucion():
     '''
-    Cuenta un chiste de forma aleatoria
+    Te da un punto positivo
 
-    :return El chiste que se va a contar
+    :return Da un ona frase de esperanza
     :rtype str
     '''
-    chistes = [
-        'Hay dos personas en un restaurante:\nX-Camarero, traigame una fanta de naranja\nM.-Lo siento señor, no nos queda Fanta, ¿Le va bien un Kas?\nX-Está bien.\nDespués de un rato, el camarero vulve con una fanta. ¿Cómo se llamó el videojuego? \nAl Final Fanta sí.\n', 
-        '¿Cuál es el mejor juego de terror de la Wii?\n La Wiija. XD XD XD',
-        'Se abre el telón y sale Leonardo Dantés muy constipado. ¿Como se llama el videojuego? Dantés Enfermo.',
-        'Esto es una consola de Nintendo sin juegos de Mario. ¿Cómo se llama la película?: "Misión imposible"',
-        'Esto es una encuesta de a ver que boss de FF es mas difícil y gana artemisa.'
+    solucion = [
+        'vacio'
     ]
-    chiste = random.choice(chistes)
-    return chiste
+    solucion = random.choice(solucion)
+    return solucion
 
 def consejo_triste():
     '''
