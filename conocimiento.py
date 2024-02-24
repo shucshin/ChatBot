@@ -662,16 +662,6 @@ def conocimientoT():
                 ''
             ]
         },
-        #////////////////////////////////////////////////Estado.
-        {
-            'intent': 'estado',
-            'regex': [
-                r'^.*me siento (.*)$',
-            ],
-            'respuesta': [
-                'Por que te sientes %1'
-            ]
-        }, 
         #////////////////////////////////////////////////Musica.
         {
             'intent': 'musica',
