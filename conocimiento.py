@@ -149,7 +149,7 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
-        #////////////////////////////////////////////////Pelea con algun conocido.
+        #////////////////////////////////////////////////Discusion con algun conocido.
         {
             'intent': 'discusion',
             'regex': [
@@ -228,6 +228,414 @@ def conocimientoT():
             'intent': 'licenciatura',
             'regex': [
                 r'.*no se si (elegi|seleccione|estudie) la (carrera|licenciatura) (correcta|adecuada).*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+
+        #////////////////////////////////////////////////Sentimiento poderoso
+        {
+            'intent': 'poderoso',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Sentimiento pensativo
+        {
+            'intent': 'pensativo',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Sentimiento frustacion
+        {
+            'intent': 'frustacion',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Mucha tarea y no saber que hacer
+        {
+            'intent': 'carga trabajo',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Fechas de examenes
+        {
+            'intent': 'examenes',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Prblema proferoes o ayudantes
+        {
+            'intent': 'problema profesor/ayudante',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Desconcentrado
+        {
+            'intent': 'desconcentrado',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Desmotivado
+        {
+            'intent': 'desmotivado',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Problemas de gestion
+        {
+            'intent': 'gestion tiempo',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Presion Familiar
+        {
+            'intent': 'presion familiar',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////autoestima bajo
+        {
+            'intent': 'autestima bajo',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Dudas sobre el futuro
+        {
+            'intent': 'duda futuro',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Pasado que pesa
+        {
+            'intent': 'pasado complicado',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Presion social
+        {
+            'intent': 'presion social',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Insomnio
+        {
+            'intent': 'insomnio',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Capacidad academica
+        {
+            'intent': 'duda capacida academica',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Procrastinacion
+        {
+            'intent': 'procrastinacion',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Perdida Familiar
+        {
+            'intent': 'duelo',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////No logro metas
+        {
+            'intent': 'metas no cumplidas',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Trastorno perfeccionista
+        {
+            'intent': 'perfeccionismo',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Miedo fracaso
+        {
+            'intent': 'fracaso',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Preocupacion economica
+        {
+            'intent': 'economico',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Problemas de comunicación
+        {
+            'intent': 'comunicacion',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Inseguridad
+        {
+            'intent': 'inseguridad',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Tecnicas de estudio
+        {
+            'intent': 'tecnicas estudio',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Sindrome del impostor
+        {
+            'intent': 'impostor',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Estres
+        {
+            'intent': 'estres',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Problemas para toma de desiciones
+        {
+            'intent': 'indesicion',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Miedo a participar en clase
+        {
+            'intent': 'miedo participar',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Confusion entre lo personal y lo academico
+        {
+            'intent': 'dividir personal y academico',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Incertidumbre de sentimientos a otra persona
+        {
+            'intent': 'confucion sentimientos',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// No lograr expresar sentimientos adecuadamente
+        {
+            'intent': 'expresar sentiminetos',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// Espacio personal
+        {
+            'intent': 'espacio personal',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// remordimiento
+        {
+            'intent': 'remordimiento',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// envidia
+        {
+            'intent': 'envidia',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #//////////////////////////////////////////////// desesperanza
+        {
+            'intent': 'desesperanza',
+            'regex': [
+                r'.*.*',
+            ],
+            'respuesta': [
+                'Mira...',
+                'Lo que te voy a decir es que...'
+            ]
+        },
+        #////////////////////////////////////////////////Salud fisica 
+        {
+            'intent': 'fisico',
+            'regex': [
+                r'.*.*',
             ],
             'respuesta': [
                 'Mira...',

@@ -281,7 +281,449 @@ def consejo_licenciatura():
     ]
     return random.choice(licenciatura)
 
-    
+def consejo_poderoso():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    poderoso = [
+        'vacio'
+    ]
+    return random.choice(poderoso)
+
+def consejo_pensativo():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    pensativo = [
+        'vacio'
+    ]
+    return random.choice(pensativo)
+
+def consejo_frustacion():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    frustacion = [
+        'vacio'
+    ]
+    return random.choice(frustacion)
+
+def consejo_carga_trabajo():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    carga_trabajo = [
+        'vacio'
+    ]
+    return random.choice(carga_trabajo)
+
+def consejo_examenes():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    examenes = [
+        'vacio'
+    ]
+    return random.choice(examenes)
+
+def consejo_problema_profesor_ayudante():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    problema_profesor_ayudante = [
+        'vacio'
+    ]
+    return random.choice(problema_profesor_ayudante)
+
+def consejo_desconcentrado():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    desconcentrado = [
+        'vacio'
+    ]
+    return random.choice(desconcentrado)
+
+def consejo_desmotivado():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    desmotivado = [
+        'vacio'
+    ]
+    return random.choice(desmotivado)
+
+def consejo_gestion_tiempo():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    gestion_tiempo = [
+        'vacio'
+    ]
+    return random.choice(gestion_tiempo)
+
+def consejo_presion_familiar():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    presion_familiar = [
+        'vacio'
+    ]
+    return random.choice(presion_familiar)
+
+def consejo_autestima_bajo():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    autestima_bajo = [
+        'vacio'
+    ]
+    return random.choice(autestima_bajo)
+
+def consejo_duda_futuro():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    duda_futuro = [
+        'vacio'
+    ]
+    return random.choice(duda_futuro)
+
+def consejo_pasado_complicado():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    pasado_complicado = [
+        'vacio'
+    ]
+    return random.choice(pasado_complicado)
+
+def consejo_presion_social():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    presion_social = [
+        'vacio'
+    ]
+    return random.choice(presion_social)
+
+def consejo_insomnio():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    insomnio = [
+        'vacio'
+    ]
+    return random.choice(insomnio)
+
+def consejo_duda_capacida_academica():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    duda_capacida_academica = [
+        'vacio'
+    ]
+    return random.choice(duda_capacida_academica)
+
+def consejo_procrastinacion():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    procrastinacion = [
+        'vacio'
+    ]
+    return random.choice(procrastinacion)
+
+def consejo_duelo():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    duelo = [
+        'vacio'
+    ]
+    return random.choice(duelo)
+
+def consejo_metas_no_cumplidas():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    metas_no_cumplidas = [
+        'vacio'
+    ]
+    return random.choice(metas_no_cumplidas)
+
+def consejo_perfeccionismo():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    perfeccionismo = [
+        'vacio'
+    ]
+    return random.choice(perfeccionismo)
+
+def consejo_fracaso():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    fracaso = [
+        'vacio'
+    ]
+    return random.choice(fracaso)
+
+def consejo_economico():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    economico = [
+        'vacio'
+    ]
+    return random.choice(economico)
+
+def consejo_comunicacion():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    comunicacion = [
+        'vacio'
+    ]
+    return random.choice(comunicacion)
+
+def consejo_inseguridad():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    inseguridad = [
+        'vacio'
+    ]
+    return random.choice(inseguridad)
+
+def consejo_tecnicas_estudio():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    tecnicas_estudio = [
+        'vacio'
+    ]
+    return random.choice(tecnicas_estudio)
+
+def consejo_impostor():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    impostor = [
+        'vacio'
+    ]
+    return random.choice(impostor)
+
+def consejo_estres():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    estres = [
+        'vacio'
+    ]
+    return random.choice(estres)
+
+def consejo_indesicion():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    indesicion = [
+        'vacio'
+    ]
+    return random.choice(indesicion)
+
+def consejo_miedo_participar():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    miedo_participar = [
+        'vacio'
+    ]
+    return random.choice(miedo_participar)
+
+def consejo_dividir_personal_y_academico():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    dividir_personal_y_academico = [
+        'vacio'
+    ]
+    return random.choice(dividir_personal_y_academico)
+
+def consejo_confucion_sentimientos():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    confucion_sentimientos = [
+        'vacio'
+    ]
+    return random.choice(confucion_sentimientos)
+
+def consejo_expresar_sentiminetos():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    expresar_sentiminetos = [
+        'vacio'
+    ]
+    return random.choice(expresar_sentiminetos)
+
+def consejo_espacio_personal():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    espacio_personal = [
+        'vacio'
+    ]
+    return random.choice(espacio_personal)
+
+def consejo_remordimiento():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    remordimiento = [
+        'vacio'
+    ]
+    return random.choice(remordimiento)
+
+def consejo_envidia():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    envidia = [
+        'vacio'
+    ]
+    return random.choice(envidia)
+
+def consejo_desesperanza():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    desesperanza = [
+        'vacio'
+    ]
+    return random.choice(desesperanza)
+
+def consejo_fisico():
+    '''
+    Proporciona un consejo para cuando , forma aleatoria
+
+    :return El consejo que se va a dar
+    :rtype str
+    '''
+    fisico = [
+        'vacio'
+    ]
+    return random.choice(fisico)
 
 def ayuda_psicologica():
     '''
