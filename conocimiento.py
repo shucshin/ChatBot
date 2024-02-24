@@ -613,7 +613,8 @@ def conocimientoT():
         {
             'intent': 'envidia',
             'regex': [
-                r'.*.*',
+                r'.*envidia.*',
+                r'.*(me molesta|odio|fastidio) que sea mejor.*'
             ],
             'respuesta': [
                 'Mira...',
@@ -624,7 +625,9 @@ def conocimientoT():
         {
             'intent': 'desesperanza',
             'regex': [
-                r'.*.*',
+                r'.*salir mal.*',
+                r'.*no lo lograre.*',
+                r'.*(no tengo|me siento sin) esperanza.*'
             ],
             'respuesta': [
                 'Mira...',
@@ -635,18 +638,18 @@ def conocimientoT():
         {
             'intent': 'fisico',
             'regex': [
-                r'.*.*',
+                r'.*fisicamente (cansado|agotado|fatigado).*',
+                r'.*tengo (cansancio|agotamiento|fatiga).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'es importante'
             ]
         },
         #////////////////////////////////////////////////Para pedir ayuda psicologica profesional
         {
             'intent': 'ayuda',
             'regex': [
-                r'.*ayuda psicol(o|ó)gica.*'
+                r'.*ayuda (profesional|psicol(o|ó)gica).*',
             ],
             'respuesta': [
                 'Estos son los numeros y correos para ayuda psicologica: ',
@@ -656,10 +659,14 @@ def conocimientoT():
         {
             'intent': 'solucion',
             'regex': [
-                r'.*.*'
+                r'.*crees que se solucione.*',
+                r'.*crees que se pueda solucionar.*',
+                r'.*ya no se (puede| va a) solucionar.*',
+                r'.*siento que no se (puede|va a) areglar.*',
+                r'.*no creo que funcione.*'
             ],
             'respuesta': [
-                ''
+                'pues mira'
             ]
         },
         #////////////////////////////////////////////////Musica.
