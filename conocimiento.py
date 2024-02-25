@@ -260,8 +260,7 @@ def conocimientoT():
         {
             'intent': 'carga trabajo',
             'regex': [
-                r'.*much(o|a) (tarea|trabajo|que estudiar).*',
-                r'.*.*'
+                r'.*much(o|a) (tarea|trabajo|que estudiar).*'
             ],
             'respuesta': [
                 'te recomiendo'
