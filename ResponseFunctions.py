@@ -277,18 +277,6 @@ def consejo_licenciatura():
     ]
     return random.choice(licenciatura)
 
-def consejo_poderoso():
-    '''
-    Proporciona un consejo para cuando , forma aleatoria
-
-    :return El consejo que se va a dar
-    :rtype str
-    '''
-    poderoso = [
-        'vacio'
-    ]
-    return random.choice(poderoso)
-
 def consejo_pensativo():
     '''
     Proporciona un consejo para cuando , forma aleatoria

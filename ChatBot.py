@@ -4,7 +4,7 @@
 
 import string, re, random, sys
 from conocimiento import conocimientoT
-from ResponseFunctions import dar_bienvenida, ask_problem, solucion, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, consejo_licenciatura, consejo_poderoso, consejo_pensativo, consejo_frustacion, consejo_carga_trabajo, consejo_examenes, consejo_desconcentrado, consejo_desmotivado, consejo_gestion_tiempo, consejo_presion_familiar, consejo_autestima_bajo, consejo_duda_futuro, consejo_presion_social, consejo_insomnio, consejo_duda_capacida_academica, consejo_procrastinacion, consejo_duelo, consejo_metas_no_cumplidas, consejo_perfeccionismo, consejo_fracaso, consejo_economico, consejo_comunicacion, consejo_inseguridad, consejo_tecnicas_estudio, consejo_impostor, consejo_estres, consejo_indesicion, consejo_miedo_participar, consejo_dividir_personal_y_academico, consejo_confucion_sentimientos, consejo_expresar_sentiminetos, consejo_espacio_personal, consejo_remordimiento, consejo_envidia, consejo_desesperanza, consejo_fisico, ayuda_psicologica
+from ResponseFunctions import dar_bienvenida, ask_problem, solucion, despedida, poner_musica, consejo_triste, consejo_feliz, consejo_enojado, consejo_preocupado, consejo_asustado, consejo_ansioso, consejo_cansado, consejo_orgulloso, consejo_pelea, consejo_discusion, consejo_termine, consejo_rumor, consejo_crisis, consejo_depresion, consejo_soledad, consejo_licenciatura, consejo_pensativo, consejo_frustacion, consejo_carga_trabajo, consejo_examenes, consejo_desconcentrado, consejo_desmotivado, consejo_gestion_tiempo, consejo_presion_familiar, consejo_autestima_bajo, consejo_duda_futuro, consejo_presion_social, consejo_insomnio, consejo_duda_capacida_academica, consejo_procrastinacion, consejo_duelo, consejo_metas_no_cumplidas, consejo_perfeccionismo, consejo_fracaso, consejo_economico, consejo_comunicacion, consejo_inseguridad, consejo_tecnicas_estudio, consejo_impostor, consejo_estres, consejo_indesicion, consejo_miedo_participar, consejo_dividir_personal_y_academico, consejo_confucion_sentimientos, consejo_expresar_sentiminetos, consejo_espacio_personal, consejo_remordimiento, consejo_envidia, consejo_desesperanza, consejo_fisico, ayuda_psicologica
 
 class ChatBot:
     """
@@ -105,8 +105,6 @@ class ChatBot:
             self.contexto = 'SOLEDAD'
         elif intent == 'licenciatura':
             self.contexto = 'LICENCIATURA'
-        elif intent == 'poderoso':
-            self.contexto = 'PODEROSO'
         elif intent == 'pensativo':
             self.contexto = 'PENSATIVO'
         elif intent == 'frustacion':
@@ -251,8 +249,6 @@ class ChatBot:
             return consejo_soledad()
         elif intent == 'licenciatura':
             return consejo_licenciatura()
-        elif intent == 'poderoso':
-            return consejo_poderoso()
         elif intent == 'pensativo':
             return consejo_pensativo() 
         elif intent == 'frustacion':
@@ -375,8 +371,6 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_soledad()
         elif self.contexto == 'LICENCIATURA':
             return 'Aquí va otro: ' + consejo_licenciatura()
-        elif self.contexto == 'PODEROSO':
-            return 'Aquí va otro: ' + consejo_poderoso()
         elif self.contexto == 'PENSATIVO':
             return 'Aquí va otro: ' + consejo_pensativo()
         elif self.contexto == 'FRUSTACION':

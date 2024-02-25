@@ -234,115 +234,105 @@ def conocimientoT():
                 'Lo que te voy a decir es que...'
             ]
         },
-
-        #////////////////////////////////////////////////Sentimiento poderoso
-        {
-            'intent': 'poderoso',
-            'regex': [
-                r'.*.*',
-            ],
-            'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
-            ]
-        },
         #////////////////////////////////////////////////Sentimiento pensativo
         {
             'intent': 'pensativo',
             'regex': [
-                r'.*.*',
+                r'.*sobrepienso mucho.*',
+                r'.*pienso muccho en mis acciones.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes'
             ]
         },
         #////////////////////////////////////////////////Sentimiento frustacion
         {
             'intent': 'frustacion',
             'regex': [
-                r'.*.*',
+                r'.*me molesta no (lograr|poder) completar l(a|as|os) (tare(a|as)|proyect(o|os)).*',
+                r'.*me molesta no enetender (el|l(a|as|os)) (temas|tema|tare(a|as)|problem(as|a)).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes '
             ]
         },
         #////////////////////////////////////////////////Mucha tarea y no saber que hacer
         {
             'intent': 'carga trabajo',
             'regex': [
-                r'.*.*',
+                r'.*much(o|a) (tarea|trabajo|que estudiar).*',
+                r'.*.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'te recomiendo'
             ]
         },
         #////////////////////////////////////////////////Fechas de examenes
         {
             'intent': 'examenes',
             'regex': [
-                r'.*.*',
+                r'.*examen.*',
+                r'.*tengo muchos examenes.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'suerte'
             ]
         },
         #////////////////////////////////////////////////Desconcentrado
         {
             'intent': 'desconcentrado',
             'regex': [
-                r'.*.*',
+                r'.*me siento desconcentrado.*',
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'debes intentar'
             ]
         },
         #////////////////////////////////////////////////Desmotivado
         {
             'intent': 'desmotivado',
             'regex': [
-                r'.*.*',
+                r'.*no tengo motivos para seguir (estudiando|trabajando|pensando).*',
+                r'.*estoy desmotivado.*',
+                r'.*me siento desmotivado.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'necesitas'
             ]
         },
         #////////////////////////////////////////////////Problemas de gestion
         {
             'intent': 'gestion tiempo',
             'regex': [
-                r'.*.*',
+                r'.*que el tiempo (vuela|se va muy rapido).*',
+                r'.*no hago nada en todo el dia.*',
+                r'.*no logro hacer l(as|a) (tare(a|as)|cosas) a tiempo.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'tienes que intentar'
             ]
         },
         #////////////////////////////////////////////////Presion Familiar
         {
             'intent': 'presion familiar',
             'regex': [
-                r'.*.*',
+                r'.*mi (familia|pap(a|á)|mam(a|á)|herman(a|o)) cree que no soy capaz.*',
+                r'.*me presionan por mis calificaciones.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'habla'
             ]
         },
         #////////////////////////////////////////////////autoestima bajo
         {
             'intent': 'autestima bajo',
             'regex': [
-                r'.*.*',
+                r'.*que no (valgo|tengo|importo) nada.*',
+                r'.*no le importo a alguien.*',
+                r'.*nadie me (aprecia|quiere).*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                'mira'
             ]
         },
         #////////////////////////////////////////////////Dudas sobre el futuro
@@ -355,8 +345,7 @@ def conocimientoT():
                 r'.*aun no se sobre mi futuro.*'
             ],
             'respuesta': [
-                'Mira...',
-                'Lo que te voy a decir es que...'
+                've y piensa que'
             ]
         },
         #////////////////////////////////////////////////Presion social
