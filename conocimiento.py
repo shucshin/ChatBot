@@ -397,7 +397,7 @@ def conocimientoT():
             'intent': 'duelo',
             'regex': [
                 r'.*pasando por una (perdida|fallecimiento de un (familiar|amig(a|o))).*',
-                r'.*perdi a (un amig(o|a)|un familiar)).*',
+                r'.*perdi a (un amig(o|a)|un familiar).*',
                 r'.*fallecio mi (padre|madre|pap(a|á)|mam(a|á)|herman(o|a)|familiar|amig(o|a)).*'
             ],
             'respuesta': [
