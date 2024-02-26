@@ -36,7 +36,7 @@ def solucion():
     :rtype str
     '''
     solucion = [
-        'vacio'
+        'Tranquilo. Todo se resolvera.'
     ]
     solucion = random.choice(solucion)
     return solucion
@@ -267,422 +267,531 @@ def consejo_soledad():
 
 def consejo_licenciatura():
     '''
-    Proporciona un consejo para cuando no sepas porque estudiaste cierta carrera, forma aleatoria
+    Proporciona un consejo para cuando no sepas por qué estudiaste cierta carrera, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     licenciatura = [
-        'vacio'
+        'Tómate un tiempo para reflexionar sobre tus intereses y metas a largo plazo.',
+        'Recuerda que la elección de una carrera no define tu valor como persona.',
+        'Habla con personas que admires para obtener diferentes perspectivas y consejos.',
+        'Explora actividades extracurriculares.'
     ]
     return random.choice(licenciatura)
 
+
 def consejo_pensativo():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando estés pensativo, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     pensativo = [
-        'vacio'
+        'Es normal tomarse un tiempo para reflexionar sobre las cosas.',
+        'Intenta escribir tus pensamientos en un diario.',
+        'Recuerda que es importante equilibrar el pensamiento reflexivo con la acción.',
+        'Date permiso para desconectarte de todo de vez en cuando.'
     ]
     return random.choice(pensativo)
 
+
 def consejo_frustacion():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando te sientas frustrado, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     frustacion = [
-        'vacio'
+        'Respira profundo y toma un descanso breve para despejar tu mente.',
+        'Trata de identificar la causa específica de tu frustración y busca soluciones prácticas para abordarla.',
+        'Recuerda que es normal sentirse frustrado en ocasiones.',
+        'Intenta cambiar tu perspectiva y enfocarte en lo que puedes controlar en lugar de lo que está fuera de tu alcance.'
     ]
     return random.choice(frustacion)
 
+
 def consejo_carga_trabajo():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando sientas una carga de trabajo abrumadora, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     carga_trabajo = [
-        'vacio'
+        'Divide tu trabajo en tareas más pequeñas y priorízalas según su importancia y urgencia.',
+        'No temas pedir ayuda si te sientes abrumado.',
+        'Asegúrate de tomar descansos regulares.',
+        'Comunica tus preocupaciones sobre la carga de trabajo con tu equipo.'
     ]
     return random.choice(carga_trabajo)
 
+
 def consejo_examenes():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando te enfrentes a exámenes, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     examenes = [
-        'vacio'
+        'Prepárate con anticipación.',
+        'No te quedes atrapado en la preocupación por los exámenes.',
+        'Recuerda la importancia de dormir bien.',
+        'No dudes en pedir ayuda si hay algo que no entiendes.'
     ]
     return random.choice(examenes)
 
+
 def consejo_desconcentrado():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando te sientas desconcentrado, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     desconcentrado = [
-        'vacio'
+        'Haz una lista de tareas y priorízalas para ayudarte a enfocarte en lo más importante.',
+        'Elimina las distracciones de tu entorno.',
+        'Practica técnicas de respiración profunda o meditación.',
+        'Divide tu tiempo en bloques de trabajo.'
     ]
     return random.choice(desconcentrado)
 
+
 def consejo_desmotivado():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando te sientas desmotivado, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     desmotivado = [
-        'vacio'
+        'Busca inspiración en personas o historias que te motiven.',
+        'Establece metas realistas y alcanzables.',
+        'No te castigues por sentirte desmotivado en ocasiones.',
+        'Rodéate de personas que te apoyen y te animen a seguir adelante.'
     ]
     return random.choice(desmotivado)
 
+
 def consejo_gestion_tiempo():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para mejorar la gestión del tiempo, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     gestion_tiempo = [
-        'vacio'
+        'Identifica tus tareas y asigna un tiempo específico para cada una de ellas.',
+        'Utiliza técnicas como la técnica Pomodoro.',
+        'Elimina las distracciones.',
+        'Aprende a decir "no" a las tareas que no son prioritarias o que no contribuyen a tus objetivos principales.'
     ]
     return random.choice(gestion_tiempo)
 
 def consejo_presion_familiar():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con la presión familiar, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     presion_familiar = [
-        'vacio'
+        'Comunica tus sentimientos y límites de manera clara pero respetuosa con tu familia.',
+        'Busca apoyo en amigos u otros miembros de la familia que puedan entender y respaldar tus decisiones.',
+        'Recuerda que es importante priorizar tu propia felicidad y bienestar.',
+        'Busca momentos para cuidarte y recargar energías.'
     ]
     return random.choice(presion_familiar)
 
+
 def consejo_autestima_bajo():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para mejorar la autoestima, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     autestima_bajo = [
-        'vacio'
+        'Celebra tus logros, por pequeños que sean, y recuerda tus cualidades positivas.',
+        'Haz una lista de afirmaciones positivas sobre ti mismo y repítelas diariamente.',
+        'Practica el autocuidado y dedica tiempo a actividades que te hagan sentir bien contigo mismo.',
+        'Busca apoyo en amigos, familiares o un profesional de la salud mental para trabajar en tu autoestima.'
     ]
     return random.choice(autestima_bajo)
 
 def consejo_duda_futuro():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con las dudas sobre el futuro, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     duda_futuro = [
-        'vacio'
+        'Enfócate en el presente y establece metas a corto plazo para sentirte más seguro sobre el futuro.',
+        'Habla con personas que han pasado por situaciones similares y busca orientación sobre tus opciones.',
+        'Recuerda que es normal sentir incertidumbre sobre el futuro, pero confía en tus habilidades para enfrentarlo.',
+        'Explora diferentes posibilidades y mantén una mentalidad abierta hacia nuevas oportunidades.'
     ]
     return random.choice(duda_futuro)
 
-
 def consejo_presion_social():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para manejar la presión social, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     presion_social = [
-        'vacio'
+        'Establece límites claros y no temas decir "no" cuando algo no se alinea con tus valores o metas.',
+        'Busca grupos o comunidades donde te sientas aceptado y puedas ser tú mismo sin presiones externas.',
+        'Recuerda que es importante priorizar tu bienestar mental y emocional por encima de las expectativas de los demás.',
+        'Practica el autocuidado y dedica tiempo a actividades que te ayuden a mantener tu confianza y autoestima.'
     ]
     return random.choice(presion_social)
 
 def consejo_insomnio():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con el insomnio, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     insomnio = [
-        'vacio'
+        'Establece una rutina de sueño regular y evita las siestas durante el día para mejorar la calidad del sueño.',
+        'Crea un ambiente propicio para dormir, como una habitación oscura, tranquila y a una temperatura confortable.',
+        'Limita la exposición a pantallas antes de dormir y practica técnicas de relajación como la meditación o la respiración profunda.',
+        'Consulta con un profesional de la salud si el insomnio persiste, ya que puede ser un síntoma de un problema subyacente.'
     ]
     return random.choice(insomnio)
 
 def consejo_duda_capacida_academica():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar las dudas sobre tus capacidades académicas, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     duda_capacida_academica = [
-        'vacio'
+        'Recuerda que el aprendizaje es un proceso gradual y que es normal enfrentarse a desafíos en el camino.',
+        'Identifica tus fortalezas y trabaja en ellas, pero también sé amable contigo mismo y reconoce tu progreso.',
+        'Busca recursos adicionales como tutorías, grupos de estudio o material complementario para reforzar tu aprendizaje.',
+        'Cultiva una mentalidad de crecimiento y enfócate en el esfuerzo y la perseverancia más que en los resultados inmediatos.'
     ]
     return random.choice(duda_capacida_academica)
 
 def consejo_procrastinacion():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar la procrastinación, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     procrastinacion = [
-        'vacio'
+        'Divide tus tareas en pasos más pequeños y establece plazos realistas para cada uno.',
+        'Identifica las causas subyacentes de tu procrastinación y busca soluciones prácticas para abordarlas.',
+        'Utiliza técnicas como la técnica Pomodoro para trabajar en intervalos de tiempo definidos y tomar descansos regulares.',
+        'Crea un ambiente de trabajo libre de distracciones y establece recompensas para motivarte a completar tus tareas.'
     ]
     return random.choice(procrastinacion)
 
 def consejo_duelo():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con el duelo, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     duelo = [
-        'vacio'
+        'Permítete sentir y expresar tus emociones de duelo, ya que es parte del proceso de sanación.',
+        'Busca apoyo en amigos, familiares o grupos de apoyo que puedan entender y acompañarte durante este momento difícil.',
+        'Encuentra formas de honrar y recordar a la persona que has perdido, como crear un altar o participar en actividades significativas en su memoria.',
+        'Considera hablar con un terapeuta o consejero para recibir orientación adicional y aprender estrategias para afrontar el duelo.'
     ]
     return random.choice(duelo)
 
 def consejo_metas_no_cumplidas():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con metas no cumplidas, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     metas_no_cumplidas = [
-        'vacio'
+        'Reevalúa tus metas y ajusta tus expectativas si es necesario, recordando que el camino hacia el éxito puede ser irregular.',
+        'Identifica las lecciones aprendidas de tus experiencias y utilízalas para crecer y mejorar en el futuro.',
+        'Busca el apoyo de amigos, familiares o mentores para obtener perspectivas externas y encontrar nuevas formas de abordar tus metas.',
+        'Recuerda que el fracaso es parte del proceso de aprendizaje y que cada obstáculo te acerca más a tus objetivos si perseveras.'
     ]
     return random.choice(metas_no_cumplidas)
 
 def consejo_perfeccionismo():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar el perfeccionismo, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     perfeccionismo = [
-        'vacio'
+        'Fija estándares realistas y celebra el progreso, no solo los resultados finales.',
+        'Aprende a aceptar la imperfección como parte del proceso de crecimiento y aprendizaje.',
+        'Practica la autocompasión y recuerda que eres humano, con virtudes y limitaciones.',
+        'Busca ayuda profesional si el perfeccionismo te está causando malestar emocional o afectando tu vida diaria.'
     ]
     return random.choice(perfeccionismo)
 
 def consejo_fracaso():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con el fracaso, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     fracaso = [
-        'vacio'
+        'Usa el fracaso como una oportunidad para aprender y crecer, en lugar de verlo como un revés permanente.',
+        'Recuerda que el fracaso es parte del camino hacia el éxito y no define tu valía como persona.',
+        'Busca el apoyo de amigos, familiares o mentores para obtener perspectivas externas y orientación.',
+        'Establece metas realistas y celebra tus esfuerzos y logros, incluso si no alcanzas tus objetivos inmediatos.'
     ]
     return random.choice(fracaso)
 
 def consejo_economico():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para manejar problemas económicos, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     economico = [
-        'vacio'
+        'Crea un presupuesto y haz un seguimiento de tus gastos para tener un mejor control de tus finanzas.',
+        'Busca oportunidades para aumentar tus ingresos, como trabajos a tiempo parcial o actividades freelance.',
+        'Prioriza tus necesidades básicas y elimina gastos innecesarios para aliviar la presión financiera.',
+        'Explora opciones de ayuda financiera, como becas, préstamos estudiantiles o programas de asistencia.'
     ]
     return random.choice(economico)
 
 def consejo_comunicacion():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para mejorar la comunicación interpersonal, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     comunicacion = [
-        'vacio'
+        'Escucha activamente a los demás y muestra empatía hacia sus perspectivas y sentimientos.',
+        'Expresa tus pensamientos y emociones de manera clara y asertiva, evitando la confrontación innecesaria.',
+        'Busca resolver los conflictos de manera constructiva, buscando soluciones que beneficien a ambas partes.',
+        'Practica la comunicación no verbal, como el contacto visual y el lenguaje corporal, para mejorar tu conexión con los demás.'
     ]
     return random.choice(comunicacion)
 
 def consejo_inseguridad():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar la inseguridad personal, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     inseguridad = [
-        'vacio'
+        'Desafía tus pensamientos negativos y reconoce tus logros y cualidades positivas.',
+        'Fomenta una mentalidad de crecimiento y acepta los desafíos como oportunidades para aprender y crecer.',
+        'Busca el apoyo de amigos, familiares o un profesional de la salud mental para trabajar en tu autoestima y confianza.',
+        'Practica el autocuidado y dedica tiempo a actividades que te hagan sentir bien contigo mismo y fortalezcan tu sentido de valía.'
     ]
     return random.choice(inseguridad)
 
 def consejo_tecnicas_estudio():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para mejorar las técnicas de estudio, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     tecnicas_estudio = [
-        'vacio'
+        'Establece un horario de estudio regular y asegúrate de tener un espacio tranquilo y libre de distracciones.',
+        'Utiliza técnicas de organización como la creación de resúmenes, mapas mentales o tarjetas de memoria para revisar la información.',
+        'Practica la autoevaluación regular para identificar áreas de mejora y ajustar tus estrategias de estudio en consecuencia.',
+        'Explora diferentes métodos de estudio y encuentra el que mejor se adapte a tu estilo de aprendizaje y tipo de material.'
     ]
     return random.choice(tecnicas_estudio)
 
 def consejo_impostor():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar el síndrome del impostor, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     impostor = [
-        'vacio'
+        'Reconoce tus logros y méritos, y recuerda que tus éxitos no son fruto de la suerte, sino de tu esfuerzo y habilidades.',
+        'Habla con personas de confianza sobre tus sentimientos de impostor y busca su apoyo y perspectiva.',
+        'Cambia tu diálogo interno negativo por afirmaciones positivas y recuerda que no estás solo en tus experiencias.',
+        'Busca oportunidades para salir de tu zona de confort y enfrentar tus miedos, demostrándote a ti mismo que eres capaz.'
     ]
     return random.choice(impostor)
 
 def consejo_estres():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para manejar el estrés, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     estres = [
-        'vacio'
+        'Practica técnicas de relajación como la meditación, la respiración profunda o el yoga para reducir los niveles de estrés.',
+        'Establece límites claros y aprende a decir "no" cuando te sientas abrumado por tus responsabilidades.',
+        'Prioriza tus tareas y haz una lista de actividades para enfocarte en lo que es más importante en el momento.',
+        'Busca el apoyo de amigos, familiares o profesionales de la salud mental si sientes que el estrés está afectando tu bienestar.'
     ]
     return random.choice(estres)
 
 def consejo_indesicion():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar la indecisión, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     indesicion = [
-        'vacio'
+        'Haz una lista de opciones y evalúa los pros y los contras de cada una.',
+        'Busca consejos de personas de confianza o expertos en el tema para ayudarte a tomar una decisión informada.',
+        'Date un plazo límite para tomar una decisión y comprométete a actuar una vez que hayas evaluado todas las opciones.',
+        'Confía en tu instinto y en tus habilidades para tomar decisiones, y recuerda que no existe una opción perfecta.'
     ]
     return random.choice(indesicion)
 
 def consejo_miedo_participar():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para superar el miedo a participar, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     miedo_participar = [
-        'vacio'
+        'Empieza con pequeños pasos y desafíate gradualmente a ti mismo a participar en situaciones sociales.',
+        'Practica técnicas de relajación como la respiración profunda o la visualización para controlar la ansiedad antes de participar.',
+        'Visualiza situaciones sociales exitosas y visualízate a ti mismo participando de manera activa y segura.',
+        'Recuerda que es normal sentir miedo al participar, pero que cada experiencia te ayudará a crecer y ganar confianza.'
     ]
     return random.choice(miedo_participar)
 
 def consejo_dividir_personal_y_academico():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para equilibrar la vida personal y académica, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     dividir_personal_y_academico = [
-        'vacio'
+        'Establece límites claros entre tu vida personal y académica, asignando tiempo específico para cada una.',
+        'Prioriza tus actividades según su importancia y urgencia, y aprende a decir "no" cuando sea necesario para proteger tu tiempo personal.',
+        'Busca actividades extracurriculares o pasatiempos que te ayuden a relajarte y desconectar del estrés académico.',
+        'Mantén una comunicación abierta con amigos, familiares y profesores sobre tus compromisos y necesidades para recibir apoyo.'
     ]
     return random.choice(dividir_personal_y_academico)
 
 def consejo_confucion_sentimientos():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para lidiar con la confusión de sentimientos, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     confucion_sentimientos = [
-        'vacio'
+        'Permítete sentir tus emociones sin juzgarlas y reconoce que es normal experimentar una amplia gama de sentimientos.',
+        'Busca identificar y nombrar tus emociones para entender mejor lo que estás sintiendo y por qué.',
+        'Practica la autoaceptación y la compasión hacia ti mismo, recordando que tus sentimientos son válidos y dignos de ser reconocidos.',
+        'Busca la ayuda de amigos, familiares o un profesional de la salud mental si sientes que la confusión de sentimientos está afectando tu bienestar.'
     ]
     return random.choice(confucion_sentimientos)
 
 def consejo_expresar_sentiminetos():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para expresar tus sentimientos, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     expresar_sentiminetos = [
-        'vacio'
+        'Encuentra un momento y un lugar adecuados para hablar sobre tus sentimientos de manera honesta y respetuosa.',
+        'Utiliza "yo" en lugar de "tú" al expresar tus emociones para evitar que la otra persona se sienta atacada o culpable.',
+        'Sé receptivo a las reacciones de la otra persona y mantén una comunicación abierta para resolver cualquier malentendido o conflicto.',
+        'Recuerda que expresar tus sentimientos es un acto de valentía y autenticidad que fortalece tus relaciones y tu bienestar emocional.'
     ]
     return random.choice(expresar_sentiminetos)
 
 def consejo_espacio_personal():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para proteger tu espacio personal, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     espacio_personal = [
-        'vacio'
+        'Establece límites claros con los demás sobre tu tiempo, tu energía y tus necesidades personales.',
+        'Aprende a decir "no" cuando sientas que tu espacio personal está siendo invadido o comprometido de alguna manera.',
+        'Busca momentos de soledad y tranquilidad para recargar tus baterías y cuidar tu bienestar emocional.',
+        'Comunica tus necesidades y expectativas de manera clara y respetuosa, fomentando relaciones saludables y equilibradas.'
     ]
     return random.choice(espacio_personal)
 
+
 def consejo_remordimiento():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando sientes remordimiento, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     remordimiento = [
-        'vacio'
+        'Aprende de tus errores y busca maneras de remediarlos.',
+        'Perdónate a ti mismo y enfócate en el presente para crecer.',
+        'Habla sobre tus sentimientos con alguien de confianza para aliviar la carga.'
     ]
     return random.choice(remordimiento)
 
 def consejo_envidia():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando sientes envidia, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     envidia = [
-        'vacio'
+        'Enfócate en tus propias metas y logros en lugar de compararte con los demás.',
+        'Practica la gratitud por lo que tienes en lugar de envidiar lo que otros tienen.',
+        'Reconoce tus sentimientos de envidia y busca maneras saludables de canalizarlos.'
     ]
     return random.choice(envidia)
 
 def consejo_desesperanza():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando te sientes desesperanzado, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     desesperanza = [
-        'vacio'
+        'Busca apoyo de amigos, familiares o profesionales si te sientes abrumado.',
+        'Encuentra actividades que te brinden alegría y esperanza.',
+        'Recuerda que los tiempos difíciles son temporales y que puedes superarlos.'
     ]
     return random.choice(desesperanza)
 
 def consejo_fisico():
     '''
-    Proporciona un consejo para cuando , forma aleatoria
+    Proporciona un consejo para cuando te sientes físicamente agotado, de forma aleatoria
 
     :return El consejo que se va a dar
     :rtype str
     '''
     fisico = [
-        'vacio'
+        'Prioriza el autocuidado, incluyendo descanso adecuado, alimentación saludable y ejercicio regular.',
+        'Tómate descansos cortos durante el día para recargar energías y reducir el estrés físico.',
+        'Busca actividades que te relajen, como estiramientos, meditación o respiración profunda.'
     ]
     return random.choice(fisico)
 
@@ -724,4 +833,4 @@ def despedida(user_input):
     for i in des:
         if i in des:
             despedida_definitiva = random.choice(despedida_glados)
-    return despedida_definitiva
+    return despedida_definitivaa
