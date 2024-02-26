@@ -803,7 +803,7 @@ def ayuda_psicologica():
     :rtype str
     '''
     ayuda = [
-	'Vacio',
+	'Espora: Numero de contacto: 55 5658 1111 \n correo: espora_psicologica@unam.mx \n Web: http://www.espora.unam.mx/',
     ] 
     return random.choice(ayuda)
 
@@ -833,4 +833,4 @@ def despedida(user_input):
     for i in des:
         if i in des:
             despedida_definitiva = random.choice(despedida_glados)
-    return despedida_definitivaa
+    return despedida_definitiva
