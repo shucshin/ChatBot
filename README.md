@@ -1,5 +1,5 @@
 # ChatBot
-Chat bot project for Artificial Intelligence
+Emotional Help Chat Bot Assistant Project for Artificial Intelligence
 
 ## Integrantes
 1. Corpus García Moisés -- 116005560
