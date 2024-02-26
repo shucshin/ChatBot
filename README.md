@@ -2,7 +2,7 @@
 Emotional Help Chat Bot Assistant Project for Artificial Intelligence
 
 ## Description:
-Chatbot that provides emotional help to students to better their emotions.
+Chatbot that provides emotional help to students to better their emotions via Discord.
 
 ## Execution:
 Clone Repository
