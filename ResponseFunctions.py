@@ -24,7 +24,7 @@ def ask_problem():
     :rtype str
     '''
     problema = [
-        'Dime'
+        'Dime que tienes'
     ]
     return random.choice(problema)
 
@@ -36,7 +36,8 @@ def solucion():
     :rtype str
     '''
     solucion = [
-        'Tranquilo. Todo se resolvera.'
+        'Tranquilo. Todo se resolvera. No te preocupes.',
+        'Sigue adelante, no te preocupes y haz tu mayor esfuerzo.'
     ]
     solucion = random.choice(solucion)
     return solucion
@@ -51,7 +52,7 @@ def consejo_triste():
     triste = [
         'Lamento mucho escuchar que te sientes triste.',
 		'Tómate una café, te sentirás mejor.',
-		'No me importa que estes triste.',
+		'Tu eres una linda persona, no mereces estar triste.',
 		'Con el tiempo se pasará, no te preocupes.'
     ]
     return random.choice(triste)
@@ -65,9 +66,9 @@ def consejo_feliz():
     '''
     feliz = [
         'Me alegra escuchar que te sientes feliz.',
-		'No te durará para siempre, disfruta el momento.',
-		'Puedo destruir tu felicidad en un instante.',
-		'Yo no se cómo se siente la felicidad, simplemente soy un Bot.'
+		'Tu mereces estar feliz, estoy feliz por ti!',
+		'Me encanta que estes feliz, siempre quiero que seas feliz.',
+		'Sigue adelante, más felicidad te espera!'
     ]
     return random.choice(feliz)
 

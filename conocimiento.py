@@ -39,7 +39,9 @@ def conocimientoT():
                 r'.*dificultad.*',
                 r'.*complicaci(on|ón).*',
                 r'.*obst(á|a)culo.*',
-                r'.*inconveniente.*'
+                r'.*inconveniente.*',
+                r'.*muy mal.*',
+                r'.*terrible.*'
             ],
             'respuesta': [
                 'Cuentame un poco más',
@@ -176,8 +178,8 @@ def conocimientoT():
         {
             'intent': 'rumor',
             'regex': [
-                r'.*rumor sobre mi.*',
-                r'.*rumor mio.*'
+                r'.*rumo(r|res) sobre mi.*',
+                r'.*rumo(r|res) mi(o|os|a|as).*'
             ],
             'respuesta': [
                 'Mira...',
@@ -200,9 +202,8 @@ def conocimientoT():
         {
             'intent': 'depresion',
             'regex': [
-                r'.*siento que estoy deprimido.*',
-                r'.*estoy en depresion.*',
-                r'.*siento deprimido.*'
+                r'.*deprimid(o|a).*',
+                r'.*depresi(o|ó)n.*'
             ],
             'respuesta': [
                 'Mira...',
@@ -213,9 +214,9 @@ def conocimientoT():
         {
             'intent': 'soledad',
             'regex': [
-                r'.*siento solo.*',
-                r'.*estoy solo.*',
-                r'.*siento completamente solo.*',
+                r'.*siento sol(o|a).*',
+                r'.*estoy sol(o|a).*',
+                r'.*siento completamente sol(o|a).*',
                 r'.*no tengo a nadie.*',
             ],
             'respuesta': [
@@ -227,7 +228,7 @@ def conocimientoT():
         {
             'intent': 'licenciatura',
             'regex': [
-                r'.*no se si (elegi|seleccione|estudie) la (carrera|licenciatura) (correcta|adecuada).*',
+                r'.*no se si (eleg(i|í)|seleccione|estudie) la (carrera|licenciatura) (correcta|adecuada).*',
             ],
             'respuesta': [
                 'Mira...',
@@ -238,22 +239,24 @@ def conocimientoT():
         {
             'intent': 'pensativo',
             'regex': [
-                r'.*sobrepienso mucho.*',
-                r'.*pienso muccho en mis acciones.*'
+                r'.*sobrepienso.*',
+                r'.*pienso mucho en mis acciones.*'
             ],
             'respuesta': [
-                'debes'
+                '¿Sabes que?',
+                'Mira...'
             ]
         },
         #////////////////////////////////////////////////Sentimiento frustacion
         {
             'intent': 'frustacion',
             'regex': [
-                r'.*me molesta no (lograr|poder) completar l(a|as|os) (tare(a|as)|proyect(o|os)).*',
-                r'.*me molesta no enetender (el|l(a|as|os)) (temas|tema|tare(a|as)|problem(as|a)).*'
+                r'.*no (lograr|poder|puedo|logro) (completar|acabar|terminar) l(a|as|os) (tare(a|as)|proyect(o|os)).*',
+                r'.*no (entender|entiendo) (el|l(a|as|os)) (temas|tema|tare(a|as)|problem(as|a)).*'
             ],
             'respuesta': [
-                'debes '
+                '¿Sabes que?',
+                'Mira...'
             ]
         },
         #////////////////////////////////////////////////Mucha tarea y no saber que hacer
@@ -263,28 +266,30 @@ def conocimientoT():
                 r'.*much(o|a) (tarea|trabajo|que estudiar).*'
             ],
             'respuesta': [
-                'te recomiendo'
+                '¿Sabes que?',
+                'Mira...'
             ]
         },
         #////////////////////////////////////////////////Fechas de examenes
         {
             'intent': 'examenes',
             'regex': [
-                r'.*examen.*',
+                r'.*exame(n|es).*',
                 r'.*tengo muchos examenes.*'
             ],
             'respuesta': [
-                'suerte'
+                'Suerte'
             ]
         },
         #////////////////////////////////////////////////Desconcentrado
         {
             'intent': 'desconcentrado',
             'regex': [
-                r'.*me siento desconcentrado.*',
+                r'.*desconcentrad(o|a).*',
             ],
             'respuesta': [
-                'debes intentar'
+                '¿Sabes que?',
+                'Mira...'
             ]
         },
         #////////////////////////////////////////////////Desmotivado
@@ -292,11 +297,11 @@ def conocimientoT():
             'intent': 'desmotivado',
             'regex': [
                 r'.*no tengo motivos para seguir (estudiando|trabajando|pensando).*',
-                r'.*estoy desmotivado.*',
-                r'.*me siento desmotivado.*'
+                r'.*(ando|estoy) desmotivad(o|a).*',
+                r'.*me siento desmotivad(o|a).*'
             ],
             'respuesta': [
-                'necesitas'
+                'Tal vez...'
             ]
         },
         #////////////////////////////////////////////////Problemas de gestion
@@ -308,7 +313,7 @@ def conocimientoT():
                 r'.*no logro hacer l(as|a) (tare(a|as)|cosas) a tiempo.*'
             ],
             'respuesta': [
-                'tienes que intentar'
+                'Tal vez...'
             ]
         },
         #////////////////////////////////////////////////Presion Familiar
@@ -319,7 +324,8 @@ def conocimientoT():
                 r'.*me presionan por mis calificaciones.*'
             ],
             'respuesta': [
-                'habla'
+                'Mira...',
+                'Tal vez...'
             ]
         },
         #////////////////////////////////////////////////autoestima bajo
@@ -331,7 +337,8 @@ def conocimientoT():
                 r'.*nadie me (aprecia|quiere).*'
             ],
             'respuesta': [
-                'mira'
+                'Mira...',
+                'Tal vez...'
             ]
         },
         #////////////////////////////////////////////////Dudas sobre el futuro
@@ -344,40 +351,45 @@ def conocimientoT():
                 r'.*aun no se sobre mi futuro.*'
             ],
             'respuesta': [
-                've y piensa que'
+                'Mira...',
+                'Tal vez...',
+                'Lo que podrías hacer es que...'
             ]
         },
         #////////////////////////////////////////////////Presion social
         {
             'intent': 'presion social',
             'regex': [
-                r'.*comparo con los demas.*',
-                r'.*veo como los demas.*',
+                r'.*comparo con los dem(a|á)s.*',
+                r'.*veo como los dem(a|á)s.*',
             ],
             'respuesta': [
-                'no debes '
+                'Mira...',
+                'Tal vez...',
+                'Lo que podrías hacer es que...'
             ]
         },
         #////////////////////////////////////////////////Insomnio
         {
             'intent': 'insomnio',
             'regex': [
-                r'.*(no logro|me cuesta) dormir.*',
-                r'.*me siento (agotado|cansado|con sueño).*',
-                r'.*toda la noche estoy despierto.*'
+                r'.*(no (logro|puedo)|me cuesta) dormir.*',
+                r'.*me siento (agotad(o|a)|fatigad(o|a)|con sueño).*',
+                r'.*toda la noche estoy despiert(o|a).*',
+                r'.*mimir.*',
             ],
             'respuesta': [
-                'la salud es importante y por eso te '
+                'La salud es importante...'
             ]
         },
         #////////////////////////////////////////////////Capacidad academica
         {
             'intent': 'duda capacida academica',
             'regex': [
-                r'.*no me siento capaz (academicamente|para la carrera|en la escuela).*',
+                r'.*no me siento (apt(o|a)|capaz) (academicamente|para la carrera|en la escuela).*',
             ],
             'respuesta': [
-                'debes confiar que'
+                'Debes confiar...'
             ]
         },
         #////////////////////////////////////////////////Procrastinacion
@@ -388,7 +400,7 @@ def conocimientoT():
                 r'.*no quiero (hacer tarea|estudiar).*'
             ],
             'respuesta': [
-                'eso es malo porque es tu furuto y '
+                'Eso es malo porque es tu futuro...'
             ]
         },
         #////////////////////////////////////////////////Perdida Familiar
@@ -396,11 +408,11 @@ def conocimientoT():
             'intent': 'duelo',
             'regex': [
                 r'.*pasando por una (perdida|fallecimiento de un (familiar|amig(a|o))).*',
-                r'.*perdi a (un amig(o|a)|un familiar).*',
+                r'.*perd(i|í) a (un amig(o|a)|un familiar).*',
                 r'.*fallecio mi (padre|madre|pap(a|á)|mam(a|á)|herman(o|a)|familiar|amig(o|a)).*'
             ],
             'respuesta': [
-                'es complicado y te recomiendo'
+                'Es complicado y es difícil...'
             ]
         },
         #////////////////////////////////////////////////No logro metas
@@ -411,7 +423,8 @@ def conocimientoT():
                 r'.*dudo de mis (objetivos|metas).*'
             ],
             'respuesta': [
-                'concentrate'
+                'Debes concentrarte...',
+                'Tu puedes...'
             ]
         },
         #////////////////////////////////////////////////Trastorno perfeccionista
@@ -421,20 +434,20 @@ def conocimientoT():
                 r'.*quiero hacer todo bien.*',
                 r'.*pienso en cada detalle.*',
                 r'.*logro hacer las cosas (excelentes|bien) pero no estoy satisfecho.*',
-                r'.*intento hacer (siempre m(a|á)s|m(a|á)s).*'
+                r'.*siempre intento hacer m(a|á)s.*'
             ],
             'respuesta': [
-                'ten cuidado'
+                'Debes tener cuidado...'
             ]
         },
         #////////////////////////////////////////////////Miedo fracaso
         {
             'intent': 'fracaso',
             'regex': [
-                r'.*fracaso en (todo|algunas cosas|mis objetivos| la escuela).*',
+                r'.*fracaso en (todo|algunas cosas|mis objetivos|la escuela).*',
             ],
             'respuesta': [
-                'piensa'
+                'Eso no es cierto...'
             ]
         },
         #//////////////////////////////////////////////// Preocupacion economica
@@ -446,7 +459,7 @@ def conocimientoT():
                 r'.*pienso en buscar trabajo.*'
             ],
             'respuesta': [
-                'es complicado'
+                'Es complicado lo se...'
             ]
         },
         #//////////////////////////////////////////////// Problemas de comunicación
@@ -457,19 +470,20 @@ def conocimientoT():
                 r'.*no puedo relacionarme.*'
             ],
             'respuesta': [
-                'no todos'
+                'No todos...',
+                'Puedes superarlo...'
             ]
         },
         #//////////////////////////////////////////////// Inseguridad
         {
             'intent': 'inseguridad',
             'regex': [
-                r'.*no estoy seguro.*',
+                r'.*no estoy segur(o|a).*',
                 r'.*mi inseguridad es.*',
-                r'.*estoy inseguro cuando.*'
+                r'.*estoy insegur(o|a) cuando.*'
             ],
             'respuesta': [
-                'debes'
+                'Puedes superarlo...'
             ]
         },
         #//////////////////////////////////////////////// Tecnicas de estudio
@@ -478,10 +492,13 @@ def conocimientoT():
             'regex': [
                 r'.*me cuesta (aprender|(trabajo|dificil|complicado) estudiar|concentrarme).*',
                 r'.*me es (dificil|complicado) (estudiar|concentrarme).*',
-                r'.*se me complica (estudiar|hacer tarea|trabajar).*'
+                r'.*(se me complica|no puedo) (estudiar|hacer tarea|trabajar).*'
             ],
             'respuesta': [
-                'te voy a dar un tip para estudiar'
+                'Te voy a dar un tip para estudiar...',
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...'
             ]
         },
         #//////////////////////////////////////////////// Sindrome del impostor
@@ -491,33 +508,38 @@ def conocimientoT():
                 r'.*siento que no soy lo que (parece|muestro) ser.*',
                 r'.*no me siento feliz con.*',
                 r'.*no me siento capaz.*'
-
             ],
             'respuesta': [
-                'piensa'
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...'
             ]
         },
         #//////////////////////////////////////////////// Estres
         {
             'intent': 'estres',
             'regex': [
-                r'.*(siento|estoy|nunca habia estado) estresado.*',
+                r'.*(siento|estoy|nunca habia estado) estresad(o|a).*',
                 r'.*es mucho estres.*',
             ],
             'respuesta': [
-                'tienes que'
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...'
             ]
         },
         #//////////////////////////////////////////////// Problemas para toma de desiciones
         {
             'intent': 'indesicion',
             'regex': [
-                r'.*no logro (elegir|decidir).*',
-                r'.*me es dificil (elegir|decidir).*',
-                r'.*(siento|estoy) indeciso.*'
+                r'.*no (logro|puedo) (elegir|decidir).*',
+                r'.*me es dif(i|í)cil (elegir|decidir).*',
+                r'.*(siento|estoy) indecis(o|a).*'
             ],
             'respuesta': [
-                'toma en cuenta que'
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...'
             ]
         },
         #////////////////////////////////////////////////Miedo a participar en clase
@@ -525,12 +547,15 @@ def conocimientoT():
             'intent': 'miedo participar',
             'regex': [
                 r'.*(siento|tengo) (miedo|temor) a partipar.*',
-                r'.*(pienso|siento) que se van burlar de mi.*',
-                r'.*que piensan de mi cuando participo.*'
+                r'.*(pienso|siento) que se van burlar de m(i|í).*',
+                r'.*que piensan de m(i|í) cuando participo.*'
 
             ],
             'respuesta': [
-                ''
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...',
+                'Yo confío en ti...'
             ]
         },
         #//////////////////////////////////////////////// Confusion entre lo personal y lo academico
@@ -539,10 +564,13 @@ def conocimientoT():
             'regex': [
                 r'.*se me combinaron los problemas academicos y personales.*',
                 r'.*convine (lo personal y lo academico|lo academico y lo personal).*'
-                
             ],
             'respuesta': [
-                'intenta'
+                'Puedes intentarlo..',
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...',
+                'Yo confío en ti...'
             ]
         },
         #//////////////////////////////////////////////// Incertidumbre de sentimientos a otra persona
@@ -556,7 +584,8 @@ def conocimientoT():
                 r'.*sentimientos encontrados.*'
             ],
             'respuesta': [
-                'debes'
+                'Mira...',
+                'Pues...'
             ]
         },
         #//////////////////////////////////////////////// No lograr expresar sentimientos adecuadamente
@@ -568,7 +597,11 @@ def conocimientoT():
                 r'.*es complicado (expresar|hablar de) como me siento.*'
             ],
             'respuesta': [
-                'debes intentar'
+                'Puedes intentarlo..',
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...',
+                'Yo confío en ti...'
             ]
         },
         #//////////////////////////////////////////////// Espacio personal
@@ -579,7 +612,9 @@ def conocimientoT():
                 r'.*(ella|el) hace que me sienta (incomod(a|o)|abrumad(a|o)).*'
             ],
             'respuesta': [
-                'es muy importante'
+                'Es muy importante tu espacio personal...',
+                'Mira...',
+                'Es difícil a veces...'
             ]
         },
         #//////////////////////////////////////////////// remordimiento
@@ -589,7 +624,8 @@ def conocimientoT():
                 r'.*remuerde.*',
             ],
             'respuesta': [
-                'debes concentrarte cuando'
+                'Debes concentrarte...',
+                'No te rindas...'
             ]
         },
         #//////////////////////////////////////////////// envidia
@@ -600,7 +636,9 @@ def conocimientoT():
                 r'.*(me molesta|odio|fastidio) que sea mejor.*'
             ],
             'respuesta': [
-                'no tienes que'
+                'No tienes que sentirte asi...',
+                'Mira...',
+                'Puedes superarlo...'
             ]
         },
         #//////////////////////////////////////////////// desesperanza
@@ -612,25 +650,31 @@ def conocimientoT():
                 r'.*(no tengo|me siento sin) esperanza.*'
             ],
             'respuesta': [
-                'yo digo que'
+                'No es necesario sentirte así...',
+                'Tu puedes...',
+                'Mira...',
+                'Puedes superarlo...'
             ]
         },
         #////////////////////////////////////////////////Salud fisica 
         {
             'intent': 'fisico',
             'regex': [
-                r'.*fisicamente (cansado|agotado|fatigado).*',
+                r'.*f(i|í)sicamente.*',
                 r'.*tengo (cansancio|agotamiento|fatiga).*'
             ],
             'respuesta': [
-                'es importante que'
+                'Lo entiendo...',
+                'Tu puedes...',
+                'Mira...',
+                'Yo confío en ti...'
             ]
         },
         #////////////////////////////////////////////////Para pedir ayuda psicologica profesional
         {
             'intent': 'ayuda',
             'regex': [
-                r'.*ayuda (profesional|psicol(o|ó)gica).*',
+                r'.*ayuda (profesional|psicol(o|ó)gic(a|o)).*',
             ],
             'respuesta': [
                 'Estos son los numeros y correos para ayuda psicologica: ',
@@ -642,12 +686,14 @@ def conocimientoT():
             'regex': [
                 r'.*crees que se solucione.*',
                 r'.*crees que se pueda solucionar.*',
-                r'.*ya no se (puede| va a) solucionar.*',
-                r'.*siento que no se (puede|va a) areglar.*',
+                r'.*ya no se (puede|va a) solucionar.*',
+                r'.*siento que no se (puede|va a) arreglar.*',
                 r'.*no creo que funcione.*'
             ],
             'respuesta': [
-                'pues mira'
+                'Pues mira...',
+                'Claro que si!',
+                'Para todo hay solución...'
             ]
         },
         #////////////////////////////////////////////////Musica.
