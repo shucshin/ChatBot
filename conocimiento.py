@@ -683,7 +683,7 @@ def conocimientoT():
                 r'.*nos vemos.*'
             ],
             'respuesta': [
-                ''
+                'Está bien'
             ]
         },
         #////////////////////////////////////////////////Cualquier caso no contemplado.

@@ -827,8 +827,8 @@ def despedida(user_input):
     :rtype str
     '''
     des = user_input.split()
-    despedida_usuario = ['salir', 'adios', 'bye', 'hasta luego', 'adiós']
-    despedida_glados = ['Adiós', 'Bye!', '¡Hasta la vista, baby!']
+    despedida_usuario = ['salir', 'adios', 'bye', 'hasta luego', 'adiós', 'nos vemos']
+    despedida_glados = ['Adiós', 'Bye!', '¡Hasta la vista, baby!', 'Te veo luego!']
     despedida_definitiva = ''
     for i in des:
         if i in des:

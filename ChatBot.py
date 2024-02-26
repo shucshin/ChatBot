@@ -179,6 +179,8 @@ class ChatBot:
             self.contexto = "SOLUCION"
         elif intent == 'musica':
             self.contexto = "MUSICA"
+        elif intent == 'terminar':
+            self.contexto = "TERMINAR"
         elif intent == 'desconocido':
             self.contexto = "DEFAULT"  
 
@@ -324,8 +326,7 @@ class ChatBot:
         elif intent == 'repetir':
             return self.da_respuesta_apropiada(user_input)
         elif intent == 'terminar':
-            print(despedida(user_input))
-            sys.exit(0)
+            return despedida(user_input)
         return ''
 
 
@@ -441,6 +442,8 @@ class ChatBot:
             return 'Aquí va otro: ' + consejo_economico()
         elif self.contexto == 'MUSICA':
             return 'Aquí va otro: ' + poner_musica()
+        elif self.contexto == 'TERMINAR':
+            return 'Aquí va otro: ' + despedida()
         elif self.contexto == 'DEFAULT':
             return '¿Podrías tratar de expresarte mejor?'
         else:
