@@ -4,9 +4,19 @@ Emotional Help Chat Bot Assistant Project for Artificial Intelligence
 ## Description:
 Chatbot that provides emotional help to students to better their emotions via Discord.
 
-## Make your own Bot
-1. [Create Bot](https://discord.com/developers/applications)
-1. Place your Token on line 11 of Bot.py
+## Make Bot:
+Create Bot
+```
+https://discord.com/developers/applications
+```
+Place Token
+```
+Line 11 on Bot.py
+```
+Upload to Cloud
+```
+https://discloudbot.com/
+```
 
 ## Execution:
 Clone Repository
@@ -28,8 +38,6 @@ Link to Invite Bot to Server
 ```
 https://discord.com/oauth2/authorize?client_id=1206598887377338388&permissions=2048&scope=bot
 ```
-
-1. [Upload to Discloud](https://discloudbot.com/)
 
 ## Integrantes
 1. Corpus García Moisés -- 116005560
